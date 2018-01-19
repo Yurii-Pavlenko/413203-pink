@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Павленко](https://up.htmlacademy.ru/adaptive/13/user/413203).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев].
 
 ---
 
