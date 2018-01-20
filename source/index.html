@@ -2,11 +2,66 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк | Главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="main-header">
+      <a class="main-header__logo">
+        <h2 class="main-header__title">Pink</h2>
+      </a>
+      <nav class="main-nav main-header__navigation">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="main-header__logo">
+              <h2 class="main-header__title">Pink</h2>
+            </a>
+            <button class="site-list__close-popup" type="button" aria-label="Закрыть меню"></button>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h1 class="visually-hidden">Pink: наше приложение раскрасит Вашу жизнь в розовый цвет</h1>
+      <section class="offer">
+        <h2 class="visually-hidden">Как получить приложение</h2>
+        <header class="offer__header">
+          <a class="offer__download" href="#">Скачать приложение</a>
+          <ul class="offer__list systems-list">
+            <li class="system-list__item system__item--apple">
+              <a class="offer__link offer__link--apple" href="#"><span class="visually-hidden">Apple</span></a>
+            </li>
+            <li class="system-list__item system__item--android">
+              <a class="offer__link offer__link--android" href="#"><span class="visually-hidden">Android</span></a>
+            </li>
+            <li class="system-list__item system__item--windows">
+              <a class="offer__link offer__link--windows" href="#"><span class="visually-hidden">Windows</span></a>
+            </li>
+          </ul>
+          <p class="offer__explanation">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+        </header>
+        <h2 class="offer__text slogan-text">Устали от серости мегаполиса?</h2>
+        <h2 class="offer__text slogan-text">Нам есть, что вам предложить!</h2>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Зачем вам наше приложение?</h2>
+      </section>
+      <section class="reviews"></section>
+      <section class="goods"></section>
+      <section class="contacts"></section>
+    </main>
   </body>
 </html>
