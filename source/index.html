@@ -6,6 +6,7 @@
   </head>
   <body>
     <header class="main-header">
+      <h2 class="visually-hidden">Шапка сайта</h2>
       <a class="main-header__logo">
         <h2 class="main-header__title">Pink</h2>
       </a>
@@ -81,90 +82,181 @@
         <img class="advantages__picture" src="http://placehold.it/160x320" width="160" height="320" alt="iPhone-Screen">
       </section>
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <h3 class="reviews__author">Николай Петров</h3>
-        <p class="reviews__text">
-          "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-        </p>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="reviews__wrapper reviews-slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list reviews-slider__list">
+            <blockquote class="reviews__item reviews-slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__text">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item reviews-slider__item">
+              <h3 class="reviews__author">Петр Николаев</h3>
+              <p class="reviews__text">
+                "Это приложение перекрасило мой мир и позволило увидеть привычные вещи в новом цвете!
+                А еще я познакомился со своим лучшим другом в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item reviews-slider__item">
+              <h3 class="reviews__author">Нитр Перотаев</h3>
+              <p class="reviews__text">
+                "Это приложенье мой мир перевернуло и  взглянуть позволило по-новому на все!
+                А еще я познакомился со своей любимой девушкой в комментариях к выложенной фотографии!"
+              </p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles reviews-slider__toggles">
+            <button class="reviews-slider__toggle" type="button">1</button>
+            <button class="reviews-slider__toggle" type="button">2</button>
+            <button class="reviews-slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
       <section class="price">
-        <h2 class="visually-hidden">Прайс-лист</h2>
-        <table class="price__table">
-          <thead>
-            <tr class="price__head">
-              <th class="price-cell">
-                База
-                <span>1,99usd</span>
-              </th>
-              <th class="price-cell">
-                Стандарт
-                <span>3,99usd</span>
-                <span class="price__hit">Хит</span>
-              </th>
-              <th class="price-cell">
-                Анлим
-                <span>9,99usd</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-          <tr class="price__row">
-            <td class="price__cell">
-              Розовый фильтр
-              <span class="price__condition">Да</span>
-            </td>
-            <td class="price__cell">
-              Розовый фильтр
-              <span class="price__condition">Да</span>
-            </td>
-            <td class="price__cell">
-              Розовый фильтр
-              <span class="price__condition">Да</span>
-            </td>
-          </tr>
-          <tr class="price__row">
-            <td class="price__cell">
-              Смайлики
-              <span class="price__condition">Нет</span>
-            </td>
-            <td class="price__cell">
-              Смайлики
-              <span class="price__condition">Да</span>
-            </td>
-            <td class="price__cell">
-              Смайлики
-              <span class="price__condition">Да</span>
-            </td>
-          </tr>
-          <tr class="price__row">
-            <td class="price__cell">
-              Комментарии
-              <span class="price__condition">Нет</span>
-            </td>
-            <td class="price__cell">
-              Комментарии
-              <span class="price__condition">Нет</span>
-            </td>
-            <td class="price__cell">
-              Комментарии
-              <span class="price__condition">Да</span>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <div class="price__wrapper price-slider">
+          <h2 class="visually-hidden">Прайс-лист</h2>
+          <div class="price__list price-slider__list">
+            <table class="price__table price-slider__item">
+              <thead>
+                <tr class="price__head">
+                  <th class="price-cell">
+                    База
+                    <span>1,99usd</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    Розовый фильтр
+                    <span class="price__condition">Да</span>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    Смайлики
+                    <span class="price__condition">Нет</span>
+                  </td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__cell">
+                    Комментарии
+                    <span class="price__condition">Нет</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="price__table price-slider__item">
+              <thead>
+              <tr class="price__head">
+                <th class="price-cell">
+                  Стандарт
+                  <span>3,99usd</span>
+                  <span class="price__hit">Хит</span>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Розовый фильтр
+                  <span class="price__condition">Да</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Смайлики
+                  <span class="price__condition">Да</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Комментарии
+                  <span class="price__condition">Нет</span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <table class="price__table price-slider__item">
+              <thead>
+              <tr class="price__head">
+                <th class="price-cell">
+                  Анлим
+                  <span>9,99usd</span>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Розовый фильтр
+                  <span class="price__condition">Да</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Смайлики
+                  <span class="price__condition">Да</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell">
+                  Комментарии
+                  <span class="price__condition">Да</span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контактные данные</h2>
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <p class="contacts__text">
+          Звоните:
+          <a class="contacts__phone" href="tel:+78125556666">+7(812)555-66-66</a>
+        </p>
+        <p class="contacts__text">
+          Пишите:
+          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p class="contacts__text">
+          Приезжайте в гости:
+          <span>ул. Большая Конюшенная, 19/8</span>
         </p>
       </section>
-      <section class="contacts"></section>
+      <footer class="main-footer">
+        <h2 class="visually-hidden">Подвал сайта</h2>
+        <section class="main-footer__logo">
+          <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
+          <h2 class="main-footer__title">Pink</h2>
+        </section>
+        <section class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
+            </li>
+          </ul>
+        </section>
+        <section class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
