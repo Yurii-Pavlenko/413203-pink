@@ -44,7 +44,7 @@
             Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
           </p>
         </header>
-        <form class="tenderer-form">
+        <form class="tenderer-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="tenderer-form__name field-name">
             <legend class="visually-hidden">Введите свои ФИО</legend>
             <ul class="field-name__list">
@@ -72,28 +72,28 @@
             <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievements__list">
               <li class="achievements__item">
-                <input class="visually-hidden" type="checkbox" id="selfie" checked>
-                <label class="tenderer-form__achievement" for="selfie">Сделал селфи с акулой</label>
+                <input class="visually-hidden" type="checkbox" id="selfie" tabindex="0" checked>
+                <label class="tenderer-form__label tenderer-form__label--achievement" for="selfie">Сделал селфи с акулой</label>
               </li>
               <li class="achievements__item">
-                <input class="visually-hidden" type="checkbox" id="beach" checked>
-                <label class="tenderer-form__achievement" for="beach">Обгорел на пляже</label>
+                <input class="visually-hidden" type="checkbox" id="beach" tabindex="0" checked>
+                <label class="tenderer-form__label tenderer-form__label--achievement" for="beach">Обгорел на пляже</label>
               </li>
               <li class="achievements__item">
-                <input class="visually-hidden" type="checkbox" id="saw-chack">
-                <label class="tenderer-form__achievement" for="saw-chack">Видел Чака Норриса</label>
+                <input class="visually-hidden" type="checkbox" id="saw-chack" tabindex="0">
+                <label class="tenderer-form__label tenderer-form__label--achievement" for="saw-chack">Видел Чака Норриса</label>
               </li>
               <li class="achievements__item">
-                <input class="visually-hidden" type="checkbox" id="bye-souvenirs">
-                <label class="tenderer-form__achievement" for="bye-souvenirs">Накупил сувениров</label>
+                <input class="visually-hidden" type="checkbox" id="bye-souvenirs" tabindex="0">
+                <label class="tenderer-form__label tenderer-form__label--achievement" for="bye-souvenirs">Накупил сувениров</label>
               </li>
               <li class="achievements__item">
-                <input class="visually-hidden" type="checkbox" id="hold-tower" checked>
-                <label class="tenderer-form__achievement" for="hold-tower">Удержал башню</label>
+                <input class="visually-hidden" type="checkbox" id="hold-tower" tabindex="0" checked>
+                <label class="tenderer-form__label tenderer-form__label--achievement" for="hold-tower">Удержал башню</label>
               </li>
               <li class="achievements__item">
-                <input class="visually-hidden" type="checkbox" id="crushed-hotel">
-                <label class="tenderer-form__achievement" for="crushed-hotel">Разгромил отель</label>
+                <input class="visually-hidden" type="checkbox" id="crushed-hotel" tabindex="0">
+                <label class="tenderer-form__label tenderer-form__label--achievement" for="crushed-hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
@@ -109,13 +109,42 @@
               <li class="contacts__item">
                 <label class="tenderer-form__label">
                   Адрес почты
-                  <input class="tenderer-form__input" type="tel" name="phone" placeholder="Введите почту*">
+                  <input class="tenderer-form__input" type="tel" name="phone" placeholder="Введите почту*" required>
                 </label>
               </li>
             </ul>
           </fieldset>
+          <fieldset class="tenderer-form__app-type app-type">
+            <legend class="app-type__title">С каким приложением путешествовали?</legend>
+            <ul class="app-type__list">
+              <li class="app-type__item">
+                <input class="visually-hidden" type="radio" id="ios" tabindex="0" checked>
+                <label class="tenderer-form__label tenderer-form__label--application" for="ios">Pink для iOS</label>
+              </li>
+              <li class="app-type__item">
+                <input class="visually-hidden" type="radio" id="android" tabindex="0">
+                <label class="tenderer-form__label tenderer-form__label--application" for="android">Pink для Android</label>
+              </li>
+              <li class="app-type__item">
+                <input class="visually-hidden" type="radio" id="win-phone" tabindex="0">
+                <label class="tenderer-form__label tenderer-form__label--application" for="win-phone">Pink для Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="tenderer-form__share-impress share-impress">
+            <legend class="visually-hidden">Расскажите свою историю</legend>
+            <label class="share-impress__title" for="tale">Опишите свои эмоции</label>
+            <textarea class="tenderer-form__tale" tabindex="0" id="tale">
+              Можно прям в красках, не стесняясь в выражениях
+            </textarea>
+          </fieldset>
+          <button class="tenderer-form__send-form" type="submit">Отправить форму</button>
         </form>
-        <footer class="tenderer-form__footer"></footer>
+        <footer class="tenderer-form__footer">
+          <p class="tenderer-form__text">
+            * - обязательные поля
+          </p>
+        </footer>
       </section>
 
     </main>
@@ -125,7 +154,7 @@
         <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
           <h2 class="main-footer__title">Pink</h2>
-        </a>        
+        </a>
       </section>
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
