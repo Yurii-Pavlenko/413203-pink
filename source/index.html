@@ -3,59 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк | Главная</title>
+   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">-->
   </head>
   <body>
     <header class="main-header">
-      <h2 class="visually-hidden">Шапка сайта</h2>
-      <a class="main-header__logo">
-        <h2 class="main-header__title">Pink</h2>
+      <a class="main-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
       </a>
-      <nav class="main-nav main-header__navigation">
-        <h2 class="visually-hidden">Навигация по сайту</h2>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="main-header__logo">
-              <h2 class="main-header__title">Pink</h2>
-            </a>
-            <button class="site-list__close-popup" type="button" aria-label="Закрыть меню"></button>
+      <nav class="main-header__navigation main-nav">
+        <ul class="main-header__list main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photos.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photos.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <h1 class="visually-hidden">Pink: наше приложение раскрасит Вашу жизнь в розовый цвет</h1>
     </header>
-    <main class="main-content">
+    <main class="content">
       <section class="offer">
         <h2 class="visually-hidden">Как получить приложение</h2>
         <header class="offer__header">
           <a class="offer__download" href="#">Скачать приложение</a>
           <ul class="offer__list systems-list">
-            <li class="offer__item offer__item--apple">
+            <li class="systems__item systems__item--apple">
               <a class="offer__link offer__link--apple" href="#"><span class="visually-hidden">Apple</span></a>
             </li>
-            <li class="offer__item offer__item--android">
+            <li class="systems__item systems__item--android">
               <a class="offer__link offer__link--android" href="#"><span class="visually-hidden">Android</span></a>
             </li>
-            <li class="offer__item offer__item--windows">
+            <li class="systems__item systems__item--windows">
               <a class="offer__link offer__link--windows" href="#"><span class="visually-hidden">Windows</span></a>
             </li>
           </ul>
           <p class="offer__explanation">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
         </header>
-        <h2 class="offer__text slogan-text">Устали от серости мегаполиса?</h2>
-        <h2 class="offer__text slogan-text">Нам есть, что вам предложить!</h2>
+        <h2 class="offer__text">Устали от серости мегаполиса?</h2>
+        <h2 class="offer__text">Нам есть, что вам предложить!</h2>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Что Вы получите используя наше приложение</h2>
@@ -79,7 +72,6 @@
             </p>
           </li>
         </ul>
-        <img class="advantages__picture" src="http://placehold.it/160x320" width="160" height="320" alt="iPhone-Screen">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper reviews-slider">
@@ -114,102 +106,72 @@
           </p>
         </div>
       </section>
-      <section class="price">
-        <div class="price__wrapper price-slider">
+      <section class="price-list">
+        <div class="price-list__wrapper price-slider">
           <h2 class="visually-hidden">Прайс-лист</h2>
-          <div class="price__list price-slider__list">
-            <table class="price__table price-slider__item">
+            <table class="price-table price-slider__item">
               <thead>
-                <tr class="price__head">
-                  <th class="price-cell">
-                    База
-                    <span>1,99usd</span>
+                <tr class="price-table__head">
+                  <th class="price-table__cell">
+                    <span class="price-table__licence-type">База</span>
+                    <span class="price-table__licence-price">1,99usd</span>
+                  </th>
+                  <th class="price-table__cell">
+                    <span class="price-table__licence-type">Стандарт</span>
+                    <span class="price-table__licence-price">3,99usd</span>
+                    <span class="price__hit">Хит</span>
+                  </th>
+                  <th class="price-table-cell">
+                    <span class="price-table__licence-type">Анлим</span>
+                    <span class="price-table__licence-price">9,99usd</span>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr class="price__row">
-                  <td class="price__cell">
-                    Розовый фильтр
-                    <span class="price__condition">Да</span>
+                <tr class="price-table__row">
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Розовый фильтр</span>
+                    <span class="price-table__condition">Да</span>
+                  </td>
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Розовый фильтр</span>
+                    <span class="price-table__condition">Да</span>
+                  </td>
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Розовый фильтр</span>
+                    <span class="price-table__condition">Да</span>
                   </td>
                 </tr>
-                <tr class="price__row">
-                  <td class="price__cell">
-                    Смайлики
-                    <span class="price__condition">Нет</span>
+                <tr class="price-table__row">
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Смайлики</span>
+                    <span class="price-table__condition">Нет</span>
+                  </td>
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Смайлики</span>
+                    <span class="price-table__condition">Да</span>
+                  </td>
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Смайлики</span>
+                    <span class="price-table__condition">Да</span>
                   </td>
                 </tr>
-                <tr class="price__row">
-                  <td class="price__cell">
-                    Комментарии
-                    <span class="price__condition">Нет</span>
+                <tr class="price-table__row">
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Комментарии</span>
+                    <span class="price-table__condition">Нет</span>
+                  </td>
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Комментарии</span>
+                    <span class="price-table__condition">Нет</span>
+                  </td>
+                  <td class="price-table__cell">
+                    <span class="price-table__feature">Комментарии</span>
+                    <span class="price-table__condition">Да</span>
                   </td>
                 </tr>
               </tbody>
             </table>
-            <table class="price__table price-slider__item">
-              <thead>
-              <tr class="price__head">
-                <th class="price-cell">
-                  Стандарт
-                  <span>3,99usd</span>
-                  <span class="price__hit">Хит</span>
-                </th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr class="price__row">
-                <td class="price__cell">
-                  Розовый фильтр
-                  <span class="price__condition">Да</span>
-                </td>
-              </tr>
-              <tr class="price__row">
-                <td class="price__cell">
-                  Смайлики
-                  <span class="price__condition">Да</span>
-                </td>
-              </tr>
-              <tr class="price__row">
-                <td class="price__cell">
-                  Комментарии
-                  <span class="price__condition">Нет</span>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-            <table class="price__table price-slider__item">
-              <thead>
-              <tr class="price__head">
-                <th class="price-cell">
-                  Анлим
-                  <span>9,99usd</span>
-                </th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr class="price__row">
-                <td class="price__cell">
-                  Розовый фильтр
-                  <span class="price__condition">Да</span>
-                </td>
-              </tr>
-              <tr class="price__row">
-                <td class="price__cell">
-                  Смайлики
-                  <span class="price__condition">Да</span>
-                </td>
-              </tr>
-              <tr class="price__row">
-                <td class="price__cell">
-                  Комментарии
-                  <span class="price__condition">Да</span>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
           <p class="price__toggles price-slider__toggles">
             <button class="price-slider__toggle" type="button">1</button>
             <button class="price-slider__toggle" type="button">2</button>
@@ -235,7 +197,6 @@
       </section>
     </main>
     <footer class="main-footer">
-      <h2 class="visually-hidden">Подвал сайта</h2>
       <section class="main-footer__logo">
         <a class="main-footer__logo-link">
           <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
@@ -257,10 +218,34 @@
         </ul>
       </section>
       <section class="main-footer__copyright copyright">
-        <h2 class="visually-hidden">Разработчик сайта</h2>
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </section>
     </footer>
+    <div class="modal-header">
+      <a class="modal-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
+      </a>
+      <nav class="modal-header__navigation main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="modal-header__menu site-menu">
+          <button class="modal-header__close" type="button" aria-label="Закрыть меню"></button>
+          <ul class="site-menu__list main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photos.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </body>
 </html>

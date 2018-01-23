@@ -6,143 +6,133 @@
   </head>
   <body>
     <header class="main-header">
-      <h2 class="visually-hidden">Шапка сайта</h2>
-      <a class="main-header__logo">
-        <h2 class="main-header__title">Pink</h2>
+      <a class="main-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
       </a>
-      <nav class="main-nav main-header__navigation">
-        <h2 class="visually-hidden">Навигация по сайту</h2>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="main-header__logo" href="index.html">
-              <h2 class="main-header__title">Pink</h2>
-            </a>
-            <button class="site-list__close-popup" type="button" aria-label="Закрыть меню"></button>
+      <nav class="main-header__navigation main-nav">
+        <ul class="main-header__list main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <h1 class="main-header__title">Фотографии пользователей</h1>
     </header>
-    <main class="photo-content">
+    <main class="content">
       <section class="photos">
         <h2 class="visually-hidden">Ознакомиться с постами пользователей</h2>
         <header class="photos__header" >
           <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
           <p class="photos__text">Видите, как не хватает ваших?</p>
         </header>
-        <ul class="photos__list">
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Анны">
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="panorama">
+                <span class="panorama__text">Панорама дня</span>
+                <img class="panorama__image" src="http://placehold.it/320x180" width="320" height="180" alt="Фото от Анны">
               </p>
-              <cite class="photos__autor-name">Анна</cite>
-              <span class="photos__post-time">(5 минут назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Анна</b>
+              <span class="photos-story__post-time">(5 минут назад)</span>
+              <p class="photos-story__post-text">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 215</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 215</span>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Левона">
+          </article>
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="photos-story__author-picture">
+                <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Левона">
               </p>
-              <cite class="photos__autor-name">Левон</cite>
-              <span class="photos__post-time">(5 часов назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Левон</b>
+              <span class="photos-story__post-time">(5 часов назад)</span>
+              <p class="photos-story__post-text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 356</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 356</span>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Антона">
+          </article>
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="photos-story__author-picture">
+                <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Антона">
               </p>
-              <cite class="photos__autor-name">Антон</cite>
-              <span class="photos__post-time">(12 часов назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Антон</b>
+              <span class="photos-story__post-time">(12 часов назад)</span>
+              <p class="photos-story__post-text">
                 Соседи будут рады!
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 666</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 666</span>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Бориса">
+          </article>
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="photos-story__author-picture">
+                <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Бориса">
               </p>
-              <cite class="photos__autor-name">Борис</cite>
-              <span class="photos__post-time">(20 часов назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Борис</b>
+              <span class="photos-story__post-time">(20 часов назад)</span>
+              <p class="photos-story__post-text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 215</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 215</span>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Сергея">
+          </article>
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="photos-story__author-picture">
+                <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Сергея">
               </p>
-              <cite class="photos__autor-name">Сергей</cite>
-              <span class="photos__post-time">(25 часов назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Сергей</b>
+              <span class="photos-story__post-time">(25 часов назад)</span>
+              <p class="photos-story__post-text">
                 Самая кубанская в мире!
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 4</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 4</span>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Максима">
+          </article>
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="photos-story__author-picture">
+                <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Максима">
               </p>
-              <cite class="photos__autor-name">Максим</cite>
-              <span class="photos__post-time">(40 часов назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Максим</b>
+              <span class="photos-story__post-time">(40 часов назад)</span>
+              <p class="photos-story__post-text">
                 Где снег-то?
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 150</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 150</span>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <blockquote class="photos_post">
-              <p class="photos__author-picture">
-                <img class="photos__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Надежды">
+          </article>
+          <article class="photos-story">
+            <blockquote class="photos-story_post">
+              <p class="photos-story__author-picture">
+                <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Надежды">
               </p>
-              <cite class="photos__autor-name">Надежда</cite>
-              <span class="photos__post-time">(45 часов назад)</span>
-              <p class="photos__post-text">
+              <b class="photos-story__author-name">Надежда</b>
+              <span class="photos-story__post-time">(45 часов назад)</span>
+              <p class="photos-story__post-text">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="photos__heart" type="button">Сердечко</button>
-              <span class="photos__like">Нравится: 2560</span>
+              <button class="photos-story__heart" type="button">Сердечко</button>
+              <span class="photos-story__like">Нравится: 2560</span>
             </blockquote>
-          </li>
-        </ul>
+          </article>
         <footer class="photos__footer">
           <p class="photos__text">Затмите их всех!</p>
           <p class="photos__text">Выкладывайте все, что накопилось в телефоне!</p>
@@ -150,28 +140,35 @@
       </section>
       <section class="lay-out">
         <h2 class="visually-hidden">Здесь можно запостить свои фотографии</h2>
-        <img class="lay-out__picture" src="http://placehold.it/280x375" width="280" height="375" alt="picture">
-        <ul class="lay-out__effects">
-          <li class="lay-out__effect lay-out__effect--crop">
-            <button class="lay-out__tool" type="button">Обрезка</button>
-          </li>
-          <li class="lay-out__effect lay-out__effect--fill">
-            <button class="lay-out__tool" type="button">Заливка</button>
-          </li>
-          <li class="lay-out__effect lay-out__effect--contrast">
-            <button class="lay-out__tool" type="button">Контраст</button>
-          </li>
-        </ul>
-        <div class="lay-out__tune-up regulator">
-          <div class="regulator__scale">Шкала</div>
-          <div class="regulator__toggle">Бегунок</div>
-        </div>
-        <button class="lay-out__button lay-out__button--post">Запостить</button>
-        <button class="lay-out__button lay-out__button--cancel">Отмена</button>
+        <form class="lay-out__form">
+          <fieldset class="lay-out__picture">
+            <a class="lay-out__link" href="#">
+              <img class="lay-out__image" src="http://placehold.it/280x375" width="280" height="375" alt="picture">
+            </a>
+          </fieldset>
+          <fieldset class="lay-out__correct">
+            <ul class="lay-out__effects">
+              <li class="lay-out__effect lay-out__effect--crop">
+                <button class="lay-out__tool" type="button">Обрезка</button>
+              </li>
+              <li class="lay-out__effect lay-out__effect--fill">
+                <button class="lay-out__tool" type="button">Заливка</button>
+              </li>
+              <li class="lay-out__effect lay-out__effect--contrast">
+                <button class="lay-out__tool" type="button">Контраст</button>
+              </li>
+            </ul>
+            <div class="lay-out__tune-up regulator">
+              <div class="regulator__scale">Шкала</div>
+              <div class="regulator__toggle">Бегунок</div>
+            </div>
+          </fieldset>
+          <button class="lay-out__button lay-out__button--post">Запостить</button>
+          <button class="lay-out__button lay-out__button--cancel">Отмена</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
-      <h2 class="visually-hidden">Подвал сайта</h2>
       <section class="main-footer__logo">
         <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
@@ -193,10 +190,34 @@
         </ul>
       </section>
       <section class="main-footer__copyright copyright">
-        <h2 class="visually-hidden">Разработчик сайта</h2>
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </section>
     </footer>
+    <div class="modal-header">
+      <a class="modal-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
+      </a>
+      <nav class="modal-header__navigation main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="modal-header__menu site-menu">
+          <button class="modal-header__close" type="button" aria-label="Закрыть меню"></button>
+          <ul class="site-menu__list main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </body>
 </html>
