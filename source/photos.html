@@ -11,7 +11,7 @@
       </a>
       <button class="main-header__toggle" type="button">Mеню</button>
       <nav class="main-header__navigation main-nav">
-        <ul class="main-header__list main-nav__list">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -36,6 +36,7 @@
           <p class="photos__text">Видите, как не хватает ваших?</p>
         </header>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
             <blockquote class="photos-story__post">
               <p class="panorama">
                 <span class="panorama__text">Панорама дня</span>
@@ -51,6 +52,7 @@
             </blockquote>
           </article>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Левон</h3>
             <blockquote class="photos-story__post">
               <p class="photos-story__author-picture">
                 <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Левона">
@@ -65,6 +67,7 @@
             </blockquote>
           </article>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Антон</h3>
             <blockquote class="photos-story__post">
               <p class="photos-story__author-picture">
                 <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Антона">
@@ -79,6 +82,7 @@
             </blockquote>
           </article>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Борис</h3>
             <blockquote class="photos-story__post">
               <p class="photos-story__author-picture">
                 <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Бориса">
@@ -93,6 +97,7 @@
             </blockquote>
           </article>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Сергей</h3>
             <blockquote class="photos-story__post">
               <p class="photos-story__author-picture">
                 <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Сергея">
@@ -107,6 +112,7 @@
             </blockquote>
           </article>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Максим</h3>
             <blockquote class="photos-story__post">
               <p class="photos-story__author-picture">
                 <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Максима">
@@ -121,6 +127,7 @@
             </blockquote>
           </article>
           <article class="photos-story">
+            <h3 class="visually-hidden">Сообщение от пользователя Надежда</h3>
             <blockquote class="photos-story__post">
               <p class="photos-story__author-picture">
                 <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Надежды">
@@ -139,33 +146,33 @@
           <p class="photos__text">Выкладывайте все, что накопилось в телефоне!</p>
         </footer>
       </section>
-      <section class="lay-out">
+      <section class="put-photo">
         <h2 class="visually-hidden">Здесь можно запостить свои фотографии</h2>
-        <form class="lay-out__form">
-          <fieldset class="lay-out__picture">
-            <a class="lay-out__link" href="#">
-              <img class="lay-out__image" src="http://placehold.it/280x375" width="280" height="375" alt="picture">
+        <form class="put-photo__form">
+          <fieldset class="put-photo__picture">
+            <a class="put-photo__link" href="#">
+              <img class="put-photo__image" src="http://placehold.it/280x375" width="280" height="375" alt="picture">
             </a>
           </fieldset>
-          <fieldset class="lay-out__correct">
-            <ul class="lay-out__effects">
-              <li class="lay-out__effect lay-out__effect--crop">
-                <button class="lay-out__tool" type="button">Обрезка</button>
+          <fieldset class="put-photo__correct">
+            <ul class="put-photo__effects">
+              <li class="put-photo__effect put-photo__effect--crop">
+                <button class="put-photo__tool" type="button">Обрезка</button>
               </li>
-              <li class="lay-out__effect lay-out__effect--fill">
-                <button class="lay-out__tool" type="button">Заливка</button>
+              <li class="put-photo__effect put-photo__effect--fill">
+                <button class="put-photo__tool" type="button">Заливка</button>
               </li>
-              <li class="lay-out__effect lay-out__effect--contrast">
-                <button class="lay-out__tool" type="button">Контраст</button>
+              <li class="put-photo__effect put-photo__effect--contrast">
+                <button class="put-photo__tool" type="button">Контраст</button>
               </li>
             </ul>
-            <div class="lay-out__tune-up regulator">
+            <div class="put-photo__tune-up regulator">
               <div class="regulator__scale">Шкала</div>
               <div class="regulator__toggle">Бегунок</div>
             </div>
           </fieldset>
-          <button class="lay-out__button lay-out__button--post">Запостить</button>
-          <button class="lay-out__button lay-out__button--cancel">Отмена</button>
+          <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
+          <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
         </form>
       </section>
     </main>
