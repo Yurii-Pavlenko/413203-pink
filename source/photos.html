@@ -4,29 +4,34 @@
     <meta charset="utf-8">
     <title>Пинк | Фотографии</title>
   </head>
+  <link href="css/style.css" rel="stylesheet">
   <body>
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
-      </a>
-      <button class="main-header__toggle" type="button">Mеню</button>
-      <nav class="main-header__navigation main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="main-header__title">Фотографии пользователей</h1>
+      <div class="main-header__wrapper--photos">
+        <div class="main-header__top">
+          <a class="main-header__logo logo">
+            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="logo">
+          </a>
+          <button class="main-header__toggle" type="button">Mеню</button>
+        </div>
+        <nav class="main-header__navigation main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photos.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="main-header__title">Фотографии пользователей</p>
+      </div>
     </header>
     <main class="content">
       <section class="photos">
@@ -178,9 +183,8 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer__logo">
-        <a class="main-footer__logo-link" href="index.html">
-          <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
-          <h2 class="main-footer__title">Pink</h2>
+        <a class="main-footer__logo-link">
+          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
       <section class="main-footer__social social">
@@ -198,8 +202,8 @@
         </ul>
       </section>
       <section class="main-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </section>
     </footer>
   </body>
