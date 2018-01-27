@@ -1,0 +1,28 @@
+.put-photo {
+  width: @mobile-width;
+  margin: @centerer-margin;
+  padding: 20px 0 41px;
+  text-align: center;
+  background-color: @bg-light-grey;
+
+  .put-photo__picture {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .put-photo__correct {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .put-photo__effects {
+    .reset-list();
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    min-height: 45px;
+    margin: @centerer-margin;
+  }
+}
