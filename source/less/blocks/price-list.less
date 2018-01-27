@@ -1,6 +1,7 @@
 .price-list {
-  width: @desktop-width;
+  width: @mobile-width;
   margin: @centerer-margin 48px;
+  overflow: hidden;
   padding-top: 75px;
   padding-bottom: 45px;
   background-color: @bg-light-grey;
@@ -12,7 +13,11 @@
 }
 
 .price-table {
+  width: 834px;
+  position: relative;
+  left: 50%;
   margin: @centerer-margin 40px;
+  transform: translateX(-50%);
   border-collapse: collapse;
 
   .price-table__cell {
