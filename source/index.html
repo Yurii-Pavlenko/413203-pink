@@ -3,30 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк | Главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
-      </a>
-      <button class="main-header__toggle" type="button">Mеню</button>
-      <nav class="main-header__navigation main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photos.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="visually-hidden">Pink: наше приложение раскрасит Вашу жизнь в розовый цвет</h1>
+      <div class="main-header__wrapper">
+        <div class="main-header__top">
+          <a class="main-header__logo logo">
+            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="logo">
+          </a>
+          <button class="main-header__toggle" type="button">Mеню</button>
+        </div>
+        <nav class="main-header__navigation main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photos.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="visually-hidden">Pink: наше приложение раскрасит Вашу жизнь в розовый цвет</h1>
+      </div>
     </header>
     <main class="content">
       <section class="offer">
@@ -35,13 +40,13 @@
           <a class="offer__download" href="#">Скачать приложение</a>
           <ul class="offer__list">
             <li class="offer__item offer__item--apple">
-              <a class="offer__link offer__link--apple" href="#"><span class="visually-hidden">Apple</span></a>
+              <a class="offer__link offer__link--apple" href="#"><span class="visually-hidden">Apple</span>Яблоко</a>
             </li>
             <li class="offer__item offer__item--android">
-              <a class="offer__link offer__link--android" href="#"><span class="visually-hidden">Android</span></a>
+              <a class="offer__link offer__link--android" href="#"><span class="visually-hidden">Android</span>Робот</a>
             </li>
             <li class="offer__item offer__item--windows">
-              <a class="offer__link offer__link--windows" href="#"><span class="visually-hidden">Windows</span></a>
+              <a class="offer__link offer__link--windows" href="#"><span class="visually-hidden">Windows</span>Окошки</a>
             </li>
           </ul>
           <p class="offer__explanation">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -111,18 +116,18 @@
             <table class="price-table price-slider__item">
               <thead>
                 <tr class="price-table__head">
-                  <th class="price-table__cell">
-                    <span class="price-table__licence-type">База</span>
-                    <span class="price-table__licence-price">1,99usd</span>
+                  <th class="price-table__cell price-table__cell--head">
+                    База
+                    <p class="price-table__licence-price">1,99usd</p>
                   </th>
-                  <th class="price-table__cell">
-                    <span class="price-table__licence-type">Стандарт</span>
-                    <span class="price-table__licence-price">3,99usd</span>
+                  <th class="price-table__cell price-table__cell--head">
+                    Стандарт
+                    <p class="price-table__licence-price">3,99usd</p>
                     <span class="price-table__hit">Хит</span>
                   </th>
-                  <th class="price-table-cell">
-                    <span class="price-table__licence-type">Анлим</span>
-                    <span class="price-table__licence-price">9,99usd</span>
+                  <th class="price-table__cell price-table__cell--head">
+                    Анлим
+                    <p class="price-table__licence-price">9,99usd</p>
                   </th>
                 </tr>
               </thead>
@@ -179,26 +184,30 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <p class="contacts__text">
-          Звоните:
-          <a class="contacts__phone" href="tel:+78125556666">+7(812)555-66-66</a>
-        </p>
-        <p class="contacts__text">
-          Пишите:
-          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__text">
-          Приезжайте в гости:
-          <span>ул. Большая Конюшенная, 19/8</span>
-        </p>
+        <header class="contacts__header">
+          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        </header>
+        <div class="contacts__item">
+          <p class="contacts__call">Звоните:</p>
+          <a class="contacts__facts" href="tel:+78125556666">+7(812)555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__call">Пишите:</p>
+          <a class="contacts__facts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__call">Приезжайте в гости:</p>
+          <span class="contacts__facts">ул. Большая Конюшенная, 19/8</span>
+        </div>
+        <footer class="contacts__footer">
+          <span class="contacts__marker"></span>
+        </footer>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__logo">
         <a class="main-footer__logo-link">
-          <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
-          <h2 class="main-footer__title">Pink</h2>
+          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
       <section class="main-footer__social social">
@@ -216,8 +225,8 @@
         </ul>
       </section>
       <section class="main-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </section>
     </footer>
   </body>

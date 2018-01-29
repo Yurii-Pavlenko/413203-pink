@@ -4,29 +4,34 @@
     <meta charset="utf-8">
     <title>Пинк | Фотографии</title>
   </head>
+  <link href="css/style.css" rel="stylesheet">
   <body>
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/80x25" width="80" height="25" alt="logo">
-      </a>
-      <button class="main-header__toggle" type="button">Mеню</button>
-      <nav class="main-header__navigation main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="main-header__title">Фотографии пользователей</h1>
+      <div class="main-header__wrapper">
+        <div class="main-header__top">
+          <a class="main-header__logo logo">
+            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="logo">
+          </a>
+          <button class="main-header__toggle" type="button">Mеню</button>
+        </div>
+        <nav class="main-header__navigation main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photos.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="main-header__title">Фотографии пользователей</h1>
+      </div>
     </header>
     <main class="content">
       <section class="photos">
@@ -39,7 +44,7 @@
             <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
             <a class="panorama" href="#">
               <span class="panorama__text">Панорама дня</span>
-              <img class="panorama__image" src="http://placehold.it/320x180" width="320" height="180" alt="Фото от Анны">
+              <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Анна</b>
@@ -54,7 +59,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Левон</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Левона">
+              <img class="photos-story__author-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от Левона">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Левон</b>
@@ -69,7 +74,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Антон</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Антона">
+              <img class="photos-story__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от Антона">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Антон</b>
@@ -84,7 +89,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Борис</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Бориса">
+              <img class="photos-story__author-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от Бориса">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Борис</b>
@@ -99,7 +104,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Сергей</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Сергея">
+              <img class="photos-story__author-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от Сергея">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Сергей</b>
@@ -114,7 +119,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Максим</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Максима">
+              <img class="photos-story__author-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от Максима">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Максим</b>
@@ -129,7 +134,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Надежда</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото от Надежды">
+              <img class="photos-story__author-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от Надежды">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Надежда</b>
@@ -151,7 +156,7 @@
         <form class="put-photo__form">
           <fieldset class="put-photo__picture">
             <a class="put-photo__link" href="#">
-              <img class="put-photo__image" src="http://placehold.it/280x375" width="280" height="375" alt="picture">
+              <img class="put-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="picture">
             </a>
           </fieldset>
           <fieldset class="put-photo__correct">
@@ -171,16 +176,19 @@
               <div class="regulator__toggle">Бегунок</div>
             </div>
           </fieldset>
-          <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
-          <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
+          <div class="put-photo__btn-wrapper">
+            <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
+          </div>
+          <div class="put-photo__btn-wrapper">
+            <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
+          </div>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__logo">
-        <a class="main-footer__logo-link" href="index.html">
-          <img class="main-footer__logo-image" src="http://placehold.it/70x45" width="70" height="45" alt="logo">
-          <h2 class="main-footer__title">Pink</h2>
+        <a class="main-footer__logo-link">
+          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
       <section class="main-footer__social social">
@@ -198,8 +206,8 @@
         </ul>
       </section>
       <section class="main-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </section>
     </footer>
   </body>
