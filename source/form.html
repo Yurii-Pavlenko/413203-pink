@@ -44,20 +44,20 @@
         <form class="tenderer-form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="tenderer-form__name field-name">
             <legend class="visually-hidden">Введите свои ФИО</legend>
-            <ul class="tenderer-form__list field-name__list">
-              <li class="tenderer-form__item field-name__item">
+            <ul class="tenderer-form__list">
+              <li class="tenderer-form__item">
                 <label class="tenderer-form__label" for="surname">Фамилия:</label>
                 <div>
                   <input class="tenderer-form__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
                 </div>
               </li>
-              <li class="tenderer-form__item field-name__item">
+              <li class="tenderer-form__item">
                 <label class="tenderer-form__label" for="name">Имя:</label>
                 <div>
                   <input class="tenderer-form__input" type="text" id="name" placeholder="Введите ваше имя*" required>
                 </div>
               </li>
-              <li class="tenderer-form__item field-name__item">
+              <li class="tenderer-form__item">
                 <label class="tenderer-form__label" for="father-name">Отчество:</label>
                 <div>
                   <input class="tenderer-form__input" type="text" id="father-name" placeholder="Ну и отчество тоже">
@@ -65,45 +65,45 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="tenderer-form__achievements achievements">
-            <h2 class="achievements__title">Ваши безбашенные<br> достижения в путешествии</h2>
-            <ul class="tenderer-form__list achievements__list">
-              <li class="tenderer-form__item achievements__item">
+          <fieldset class="tenderer-form__achievements">
+            <h2 class="tenderer-form__title">Ваши безбашенные<br> достижения в путешествии</h2>
+            <ul class="tenderer-form__register">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="checkbox" id="selfie" tabindex="0" checked>
-                <label class="tenderer-form__label tenderer-form__label--achievement" for="selfie">Сделал селфи с акулой</label>
+                <label class="tenderer-form__achievement" for="selfie">Сделал селфи с акулой</label>
               </li>
-              <li class="tenderer-form__item achievements__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="checkbox" id="beach" tabindex="0" checked>
-                <label class="tenderer-form__label tenderer-form__label--achievement" for="beach">Обгорел на пляже</label>
+                <label class="tenderer-form__achievement" for="beach">Обгорел на пляже</label>
               </li>
-              <li class="tenderer-form__item achievements__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="checkbox" id="saw-chack" tabindex="0">
-                <label class="tenderer-form__label tenderer-form__label--achievement" for="saw-chack">Видел Чака Норриса</label>
+                <label class="tenderer-form__achievement" for="saw-chack">Видел Чака Норриса</label>
               </li>
-              <li class="tenderer-form__item achievements__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="checkbox" id="bye-souvenirs" tabindex="0">
-                <label class="tenderer-form__label tenderer-form__label--achievement" for="bye-souvenirs">Накупил сувениров</label>
+                <label class="tenderer-form__achievement" for="bye-souvenirs">Накупил сувениров</label>
               </li>
-              <li class="tenderer-form__item achievements__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="checkbox" id="hold-tower" tabindex="0" checked>
-                <label class="tenderer-form__label tenderer-form__label--achievement" for="hold-tower">Удержал башню</label>
+                <label class="tenderer-form__achievement" for="hold-tower">Удержал башню</label>
               </li>
-              <li class="tenderer-form__item achievements__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="checkbox" id="crushed-hotel" tabindex="0">
-                <label class="tenderer-form__label tenderer-form__label--achievement" for="crushed-hotel">Разгромил отель</label>
+                <label class="tenderer-form__achievement" for="crushed-hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="tenderer-form__contacts">
             <legend class="visually-hidden">А теперь укажите как с вами связаться</legend>
-            <ul class="tenderer-form__list contacts__list">
-              <li class="tenderer-form__item contacts__item">
+            <ul class="tenderer-form__list">
+              <li class="tenderer-form__item">
                 <label class="tenderer-form__label" for="phone">Номер телефона</label>
                 <div>
                   <input class="tenderer-form__input" type="tel" id="phone" placeholder="Номер, пожалуйста">
                 </div>
               </li>
-              <li class="tenderer-form__item contacts__item">
+              <li class="tenderer-form__item">
                 <label class="tenderer-form__label">Адрес почты</label>
                 <div>
                   <input class="tenderer-form__input" type="tel" name="phone" placeholder="Введите почту*" required>
@@ -113,18 +113,18 @@
           </fieldset>
           <fieldset class="tenderer-form__app-type">
             <h2 class="tenderer-form__title">С каким приложением путешествовали?</h2>
-            <ul class="tenderer-form__list app-type__list">
-              <li class="tenderer-form__item">
+            <ul class="tenderer-form__register">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="radio" id="ios" tabindex="0" checked>
-                <label class="tenderer-form__label tenderer-form__label--application" for="ios">Pink для iOS</label>
+                <label class="tenderer-form__application" for="ios">Pink для iOS</label>
               </li>
-              <li class="tenderer-form__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="radio" id="android" tabindex="0">
-                <label class="tenderer-form__label tenderer-form__label--application" for="android">Pink для Android</label>
+                <label class="tenderer-form__application" for="android">Pink для Android</label>
               </li>
-              <li class="tenderer-form__item">
+              <li class="tenderer-form__piece">
                 <input class="visually-hidden" type="radio" id="win-phone" tabindex="0">
-                <label class="tenderer-form__label tenderer-form__label--application" for="win-phone">Pink для Windows Phone</label>
+                <label class="tenderer-form__application" for="win-phone">Pink для Windows Phone</label>
               </li>
             </ul>
           </fieldset>
