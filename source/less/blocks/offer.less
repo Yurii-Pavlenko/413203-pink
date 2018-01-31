@@ -54,3 +54,45 @@
   color: @font-color-base;
   text-align: center;
 }
+
+
+@media (min-width: @tablet-width) {
+  .offer {
+    position: relative;
+    top: -350px;
+    left: -150px;
+    width: @tablet-width;
+  }
+
+
+  .offer__explanation {
+    width: 350px;
+    margin-left: 120px;
+    padding-left: 30px;
+    padding-right: 0;
+    font-size: 18px;
+  }
+
+  .offer__header {
+    background: none;
+  }
+
+  .offer__download {
+    width: 300px;
+  }
+
+  .offer__wrapper {
+    width: @desktop-width;
+    margin: 140px auto 50px;
+  }
+
+  .offer__text {
+    padding: 0;
+    font-size: 40px;
+    line-height: 35px;
+
+    &:nth-child(2) {
+      padding: 0 230px;
+    }
+  }
+}
