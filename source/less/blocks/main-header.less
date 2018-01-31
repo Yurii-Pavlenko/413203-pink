@@ -19,13 +19,37 @@
   display: none;
 }
 
+
 @media (min-width: @tablet-width) {
   .main-header {
     width: @tablet-width;
+    min-height: auto;
+    background-size: cover;
   }
 
   .main-header__top {
     width: @tablet-width;
     padding: 25px 20px 40px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: @desktop-width;
+  }
+
+  .main-header__top {
+    width: auto;
+  }
+
+  .main-header__wrapper {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    min-height: 110px;
+    background-color: @bg-darkblue;
+    opacity: 0.3;
+    z-index: 3;
   }
 }
