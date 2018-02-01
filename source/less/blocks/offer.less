@@ -58,22 +58,22 @@
 
 @media (min-width: @tablet-width) {
   .offer {
-    position: relative;
-    top: -350px;
-    left: -150px;
     width: @tablet-width;
+    margin: 0;
   }
 
 
   .offer__explanation {
     width: 350px;
-    margin-left: 120px;
-    padding-left: 30px;
-    padding-right: 0;
+    margin: @centerer-margin;
     font-size: 18px;
   }
 
   .offer__header {
+    position: relative;
+    z-index: 1;
+    margin-top: -350px;
+    margin-left: -170px;
     background: none;
   }
 
@@ -94,5 +94,12 @@
     &:nth-child(2) {
       padding: 0 230px;
     }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .offer {
+    width: @desktop-width;
   }
 }
