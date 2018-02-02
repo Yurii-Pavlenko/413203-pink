@@ -11,3 +11,23 @@
   margin: 0;
   text-align: center;
 }
+
+
+@media (min-width: @tablet-width) {
+  .price-list {
+    width: @tablet-width;
+    overflow: visible;
+    padding: 70px 20px;
+  }
+
+  .price-list__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price-list {
+    width: @desktop-width;
+    padding: 100px 30px;
+  }
+}

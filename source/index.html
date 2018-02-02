@@ -36,29 +36,26 @@
         <div class="bg-photo__wrapper">
           <h1 class="visually-hidden">Pink: наше приложение раскрасит Вашу жизнь в розовый цвет</h1>
           <p class="bg-photo__slogan">Взгляните на жизнь иначе!</p>
+          <div class="offer">
+            <a class="offer__download" href="#">Скачать приложение</a>
+            <ul class="offer__list">
+              <li class="offer__item offer__item--apple">
+                <a class="offer__link offer__link--apple" href="#"><span class="visually-hidden">Apple</span>Яблоко</a>
+              </li>
+              <li class="offer__item offer__item--android">
+                <a class="offer__link offer__link--android" href="#"><span class="visually-hidden">Android</span>Робот</a>
+              </li>
+              <li class="offer__item offer__item--windows">
+                <a class="offer__link offer__link--windows" href="#"><span class="visually-hidden">Windows</span>Окошки</a>
+              </li>
+            </ul>
+            <p class="offer__explanation">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
-      <section class="offer">
-        <h2 class="visually-hidden">Как получить приложение</h2>
-        <header class="offer__header">
-          <a class="offer__download" href="#">Скачать приложение</a>
-          <ul class="offer__list">
-            <li class="offer__item offer__item--apple">
-              <a class="offer__link offer__link--apple" href="#"><span class="visually-hidden">Apple</span>Яблоко</a>
-            </li>
-            <li class="offer__item offer__item--android">
-              <a class="offer__link offer__link--android" href="#"><span class="visually-hidden">Android</span>Робот</a>
-            </li>
-            <li class="offer__item offer__item--windows">
-              <a class="offer__link offer__link--windows" href="#"><span class="visually-hidden">Windows</span>Окошки</a>
-            </li>
-          </ul>
-          <p class="offer__explanation">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
-        </header>
-        <div class="offer__wrapper">
-          <h2 class="offer__text">Устали от серости мегаполиса?</h2>
-          <h2 class="offer__text">Нам есть, что вам предложить!</h2>
-        </div>
+      <section class="tagline">
+        <h2 class="tagline__text">Устали от серости мегаполиса?</h2>
+        <h2 class="tagline__text">Нам есть, что вам предложить!</h2>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Что Вы получите используя наше приложение</h2>
@@ -109,14 +106,20 @@
               </p>
             </blockquote>
             <blockquote class="reviews__item reviews-slider__item">
-              <h3 class="reviews__author">Петр Николаев</h3>
+              <div class="reviews__author-wrapper">
+                <h3 class="reviews__author">Петр Николаев</h3>
+                <p class="reviews__personal-data">27лет, водитель кобылы</p>
+              </div>
               <p class="reviews__text">
-                «Это приложение перекрасило мой мир и позволило увидеть привычные вещи в новом цвете! А еще я познакомился со своим лучшим другом в комментариях к выложенной фотографии!»
+                «Это приложение перекрасило мой мир и позволило увидеть привычные вещи в новом цвете!
+                А еще я познакомился со своим лучшим другом в комментариях к выложенной фотографии!»
               </p>
-              <span class="reviews__personal-data">25лет, водитель трамвая</span>
             </blockquote>
             <blockquote class="reviews__item reviews-slider__item">
-              <h3 class="reviews__author">Нитр Перотаев</h3>
+              <div class="reviews__author-wrapper">
+                <h3 class="reviews__author">Нитр Перотаев</h3>
+                <p class="reviews__personal-data">24лет, поэт</p>
+              </div>
               <p class="reviews__text">
                 "Это приложенье мой мир перевернуло и  взглянуть позволило по-новому на все!
                 А еще я познакомился со своей любимой девушкой в комментариях к выложенной фотографии!"
@@ -136,6 +139,7 @@
             <table class="price-table price-slider__item">
               <thead>
                 <tr class="price-table__head">
+                  <td></td>
                   <th class="price-table__cell price-table__cell--head">
                     База
                     <p class="price-table__licence-price">1,99usd</p>
@@ -153,6 +157,9 @@
               </thead>
               <tbody>
                 <tr class="price-table__row">
+                  <td class="price-table__cell price-table__cell--visible">
+                    <span class="price-table__feature-name">Розовый фильтр</span>
+                  </td>
                   <td class="price-table__cell">
                     <span class="price-table__feature">Розовый фильтр</span>
                     <span class="price-table__condition">Да</span>
@@ -167,6 +174,9 @@
                   </td>
                 </tr>
                 <tr class="price-table__row">
+                  <td class="price-table__cell price-table__cell--visible">
+                    <span class="price-table__feature-name">Смайлики</span>
+                  </td>
                   <td class="price-table__cell">
                     <span class="price-table__feature">Смайлики</span>
                     <span class="price-table__condition">Нет</span>
@@ -181,6 +191,9 @@
                   </td>
                 </tr>
                 <tr class="price-table__row">
+                  <td class="price-table__cell price-table__cell--visible">
+                    <span class="price-table__feature-name">Комментарии</span>
+                  </td>
                   <td class="price-table__cell">
                     <span class="price-table__feature">Комментарии</span>
                     <span class="price-table__condition">Нет</span>
@@ -207,27 +220,29 @@
         <header class="contacts__header">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         </header>
-        <div class="contacts__item">
-          <p class="contacts__call">Звоните:</p>
-          <a class="contacts__facts" href="tel:+78125556666">+7(812)555-66-66</a>
-        </div>
-        <div class="contacts__item">
-          <p class="contacts__call">Пишите:</p>
-          <a class="contacts__facts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__item">
-          <p class="contacts__call">Приезжайте в гости:</p>
-          <span class="contacts__facts">ул. Большая Конюшенная, 19/8</span>
+        <div class="contacts__wrapper">
+          <div class="contacts__item">
+            <p class="contacts__call">Звоните:</p>
+            <a class="contacts__facts" href="tel:+78125556666">+7(812)555-66-66</a>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__call">Пишите:</p>
+            <a class="contacts__facts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__call">Приезжайте в гости:</p>
+            <span class="contacts__facts">ул. Большая Конюшенная, 19/8</span>
+          </div>
         </div>
         <footer class="contacts__footer">
           <span class="contacts__marker"></span>
         </footer>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--main-sheet">
       <section class="main-footer__logo">
         <a class="main-footer__logo-link">
-          <img class="main-footer__logo-image" src="img/logo-pink-white-tablet.svg" width="183" height="50" alt="logo">
+          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
       <section class="main-footer__social social">

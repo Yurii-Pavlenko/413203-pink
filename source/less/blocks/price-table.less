@@ -34,3 +34,37 @@
   line-height: 30px;
   font-weight: 300;
 }
+
+
+@media (min-width: @tablet-width) {
+  .price-table {
+    width: 620px;
+    margin: 0;
+  }
+
+  .price-table__cell {
+    width: 150px;
+    padding: 22px 11px;
+  }
+
+  .price-table__feature {
+    display: none;
+  }
+
+  .price-table__feature-name {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .price-table {
+    width: 940px;
+  }
+
+  .price-table__cell {
+    width: 235px;
+  }
+}

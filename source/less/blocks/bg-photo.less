@@ -1,9 +1,7 @@
 .bg-photo {
-  position: relative;
   width: @mobile-width;
   min-height: 462px;
   margin: @centerer-margin;
-  z-index: 0;
   background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: cover;
 }
@@ -50,6 +48,8 @@
 
   .bg-photo__slogan {
     display: block;
+    margin-bottom: 40px;
+    text-align: center;
   }
 }
 
@@ -63,10 +63,13 @@
   }
 
   .bg-photo__wrapper {
+    padding-left: 150px;
     background-position: 475px bottom;
   }
 
   .bg-photo__slogan {
-    padding-left: 150px;
+    width: 240px;
+    margin-bottom: 60px;
+    text-align: left;
   }
 }
