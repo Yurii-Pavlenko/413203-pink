@@ -38,25 +38,27 @@
       <section class="photos">
         <h2 class="visually-hidden">Ознакомиться с постами пользователей</h2>
         <header class="photos__header" >
-          <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-          <p class="photos__text">Видите, как не хватает ваших?</p>
+          <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
-          <article class="photos-story">
-            <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
-            <a class="panorama" href="#">
-              <span class="panorama__text">Панорама дня</span>
-              <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
-            </a>
-            <div class="photos-story__post">
-              <b class="photos-story__author-name">Анна</b>
-              <span class="photos-story__post-time">(5 минут назад)</span>
-              <p class="photos-story__post-text">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
-              </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 215</span>
+        <article class="panorama">
+          <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
+          <a class="panorama__link" href="#">
+            <span class="panorama__day">Панорама дня</span>
+            <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
+          </a>
+          <div class="panorama__post">
+            <b class="panorama__author-name">Анна</b>
+            <span class="panorama__post-time">(5 минут назад)</span>
+            <p class="panorama__post-text">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
+            </p>
+            <div class="panorama__likes-quantity">
+              <button class="panorama__heart" type="button">Сердечко</button>
+              <span class="panorama__like">Нравится: 215</span>
             </div>
-          </article>
+          </div>
+        </article>
+        <div class="photos__wrapper">
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Левон</h3>
             <a class="photos-story__author-picture" href="#">
@@ -68,8 +70,10 @@
               <p class="photos-story__post-text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 356</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 356</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -83,8 +87,10 @@
               <p class="photos-story__post-text">
                 Соседи будут рады!
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 666</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 666</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -98,8 +104,10 @@
               <p class="photos-story__post-text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 215</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 215</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -113,8 +121,10 @@
               <p class="photos-story__post-text">
                 Самая кубанская в мире!
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 4</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 4</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -128,8 +138,10 @@
               <p class="photos-story__post-text">
                 Где снег-то?
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 150</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 150</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -143,10 +155,13 @@
               <p class="photos-story__post-text">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 2560</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 2560</span>
+              </div>
             </div>
           </article>
+        </div>
         <footer class="photos__footer">
           <p class="photos__text">Затмите их всех!</p>
           <p class="photos__text">Выкладывайте все, что накопилось в телефоне!</p>

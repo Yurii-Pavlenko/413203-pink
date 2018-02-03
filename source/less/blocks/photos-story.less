@@ -21,3 +21,19 @@
   font-size: 12px;
   color: @font-color-pink;
 }
+
+
+@media (min-width: @tablet-width) {
+  .photos-story {
+    width: 300px;
+  }
+
+  .photos-story__likes-quantity {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photos-story__heart {
+    order: 2;
+  }
+}

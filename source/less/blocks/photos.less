@@ -20,3 +20,43 @@
   line-height: 30px;
   color: @font-color-base;
 }
+
+
+@media (min-width: @tablet-width) {
+  .photos {
+    width: @tablet-width;
+    margin-bottom: 75px;
+  }
+
+  .photos__header {
+    margin-top: 0;
+  }
+
+  .photos__text {
+    padding: 0 50px;
+    font-size: 18px;
+  }
+
+  .photos__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: @centerer-margin 50px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .photos {
+    width: 1200px;
+    margin: @centerer-margin 75px;
+  }
+
+  .photos__text {
+    padding: 0 150px;
+  }
+
+  .photos__wrapper {
+    width: @desktop-width;
+  }
+}
