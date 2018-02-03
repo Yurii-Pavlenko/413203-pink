@@ -175,28 +175,42 @@
               <img class="put-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="picture">
             </a>
           </fieldset>
-          <fieldset class="put-photo__correct">
-            <ul class="put-photo__effects">
-              <li class="put-photo__effect put-photo__effect--crop">
-                <button class="put-photo__tool" type="button">Обрезка</button>
-              </li>
-              <li class="put-photo__effect put-photo__effect--fill">
-                <button class="put-photo__tool" type="button">Заливка</button>
-              </li>
-              <li class="put-photo__effect put-photo__effect--contrast">
-                <button class="put-photo__tool" type="button">Контраст</button>
-              </li>
-            </ul>
-            <div class="put-photo__tune-up regulator">
-              <div class="regulator__scale">Шкала</div>
-              <div class="regulator__toggle">Бегунок</div>
+          <div class="put-photo__container">
+            <fieldset class="put-photo__correct">
+              <ul class="put-photo__effects">
+                <li class="put-photo__effect put-photo__effect--crop">
+                  <button class="put-photo__tool" type="button">Обрезка</button>
+                  <div class="put-photo__tune-up">
+                    <div class="regulator__scale">Шкала</div>
+                    <div class="regulator__toggle">Бегунок</div>
+                  </div>
+                </li>
+                <li class="put-photo__effect put-photo__effect--fill">
+                  <button class="put-photo__tool" type="button">Заливка</button>
+                  <div class="put-photo__tune-up">
+                    <div class="regulator__scale">Шкала</div>
+                    <div class="regulator__toggle">Бегунок</div>
+                  </div>
+                </li>
+                <li class="put-photo__effect put-photo__effect--contrast">
+                  <button class="put-photo__tool" type="button">Контраст</button>
+                  <div class="put-photo__tune-up">
+                    <div class="regulator__scale">Шкала</div>
+                    <div class="regulator__toggle">Бегунок</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="regulator">
+                <div class="regulator__scale">Шкала</div>
+                <div class="regulator__toggle">Бегунок</div>
+              </div>
+            </fieldset>
+            <div class="put-photo__btn-wrapper">
+              <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
             </div>
-          </fieldset>
-          <div class="put-photo__btn-wrapper">
-            <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
-          </div>
-          <div class="put-photo__btn-wrapper">
-            <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
+            <div class="put-photo__btn-wrapper">
+              <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>
@@ -204,7 +218,7 @@
     <footer class="main-footer">
       <section class="main-footer__logo">
         <a class="main-footer__logo-link">
-          <img class="main-footer__logo-image" src="img/logo-pink-white-tablet.svg" width="183" height="50" alt="logo">
+          <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
       <section class="main-footer__social social">

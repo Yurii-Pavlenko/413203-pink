@@ -22,3 +22,46 @@
   min-height: 45px;
   margin: @centerer-margin;
 }
+
+.put-photo__tune-up {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .put-photo {
+    width: @tablet-width;
+    padding: 57px 20px;
+    margin-bottom: 36px;
+  }
+
+  .put-photo__form {
+    display: flex;
+  }
+
+  .regulator {
+    display: none;
+  }
+
+  .put-photo__picture {
+    margin-right: 45px;
+  }
+
+  .put-photo__effects {
+    display: block;
+    margin-bottom: 68px;
+  }
+
+  .put-photo__tune-up {
+    display: block;
+  }
+
+  .put-photo__effect {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+    height: 71px;
+    box-sizing: border-box;
+    border-bottom: 1px solid @effect-border-color;
+  }
+}
