@@ -31,7 +31,7 @@
 @media (min-width: @tablet-width) {
   .put-photo {
     width: @tablet-width;
-    padding: 57px 20px;
+    padding: 55px 20px;
     margin-bottom: 36px;
   }
 
@@ -63,5 +63,23 @@
     height: 71px;
     box-sizing: border-box;
     border-bottom: 1px solid @effect-border-color;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .put-photo {
+    width: 940px;
+    padding: 55px 80px;
+  }
+
+  .put-photo__picture {
+    margin-right: 90px;
+  }
+
+  .put-photo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
   }
 }
