@@ -5,7 +5,6 @@
 }
 
 .photos__header {
-  margin-top: -230px;
   padding: 52px 35px;
   background-color: @bg-white;
   font-size: 14px;
@@ -19,6 +18,12 @@
   font-size: 14px;
   line-height: 30px;
   color: @font-color-base;
+}
+
+.photos__wrapper {
+  width: @mobile-width;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 
@@ -41,6 +46,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: @tablet-width;
     margin: @centerer-margin 50px;
   }
 }
