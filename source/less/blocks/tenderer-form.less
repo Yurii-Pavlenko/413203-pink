@@ -8,7 +8,6 @@
 }
 
 .tenderer-form__name {
-  .reset-fieldset();
   margin-bottom: 25px;
   background-color: @bg-white;
 }
@@ -37,7 +36,6 @@
 }
 
 .tenderer-form__achievements {
-  .reset-fieldset();
   margin-bottom: 40px;
   padding: 40px 0 50px;
   background-color: @bg-light-grey;
@@ -54,6 +52,10 @@
 
   &--impress {
     margin-bottom: 20px;
+  }
+
+  &--contacts {
+    display: none;
   }
 }
 
@@ -81,13 +83,11 @@
 }
 
 .tenderer-form__contacts {
-  .reset-fieldset();
   margin-bottom: 25px;
   background-color: @bg-white;
 }
 
 .tenderer-form__app-type {
-  .reset-fieldset();
   margin-bottom: 40px;
   padding: 40px 0 50px;
   background-color: @bg-light-grey;
@@ -107,11 +107,6 @@
   }
 }
 
-
-.tenderer-form__share-impress {
-  .reset-fieldset();
-}
-
 .tenderer-form__tale {
   width: 280px;
   height: 200px;
@@ -125,10 +120,6 @@
   box-sizing: border-box;
 }
 
-.tenderer-form__legend {
-  display: none;
-}
-
 
 @media (min-width: @tablet-width) {
   .tenderer-form {
@@ -136,28 +127,32 @@
     flex-direction: column;
   }
 
-  .tenderer-form__legend {
+  .tenderer-form__title {
     display: block;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: @font-color-pink;
-    text-transform: uppercase;
+    position: relative;
+    top: -50px;
+    width: 366px;
+    margin: @centerer-margin;
+    background-color: @bg-white;
 
     &--impress {
+      top: -10px;
+      width: 260px;
       margin-bottom: 20px;
     }
 
     &--contacts {
+      top: -10px;
+      width: 256px;
       margin-bottom: 40px;
     }
 
-    &--name {
-      color: @font-color-secondary;
+    &--achievements {
+      width: 400px;
     }
   }
 
-  .tenderer-form__title {
+  .tenderer-form__breack {
     display: none;
   }
 
@@ -223,7 +218,7 @@
 
   .tenderer-form__name {
     width: 450px;
-    margin-right: 60px;
+    margin-right: 40px;
     border: 2px solid @white;
   }
 

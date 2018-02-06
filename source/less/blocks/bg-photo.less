@@ -1,23 +1,17 @@
 .bg-photo {
   width: @mobile-width;
-  min-height: 462px;
+  padding-top: 462px;
   margin: @centerer-margin;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: cover;
+  background: url(../img/iphone-hand-mobile@1x.png) no-repeat left 176px, url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
 
   &--inner {
-    min-height: 240px;
+    padding-top: 140px;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
   }
 }
 
-.bg-photo__wrapper {
-  min-width: inherit;
-  min-height: inherit;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
-}
-
 .bg-photo__title {
-  padding: 100px 10px 0;
+  padding: 0 10px 90px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -43,9 +37,13 @@
     min-height: 515px;
     padding: 125px 20px 0;
     box-sizing: border-box;
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
+    background-size: cover;
   }
 
   .bg-photo__wrapper {
+    min-height: inherit;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
     background-position: right bottom;
     background-size: 430px 510px;
   }
