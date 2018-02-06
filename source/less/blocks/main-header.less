@@ -1,44 +1,88 @@
 .main-header {
   width: @mobile-width;
-  min-height: 721px;
   margin: @centerer-margin;
   text-align: center;
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center bottom;
-}
-
-.main-header__wrapper {
-  min-width: inherit;
-  min-height: inherit;
-  background: url("../../img/iphone-hand-mobile@1x.png") no-repeat center bottom;
 }
 
 .main-header__top {
-  display: flex;
-  width: @mobile-width;
-  margin: @centerer-margin;
-  justify-content: space-between;
-}
-
-.main-header__logo {
-  width: @mobile-width;
-  padding: 16px 25px;
   background-color: @bg-darkblue;
   border-bottom: 1px solid @border-lighter-color;
+}
+
+.main-header__container {
+  width: @mobile-width;
+  display: flex;
+  margin: @centerer-margin;
+  justify-content: space-between;
+  padding: 20px 26px;
+  box-sizing: border-box;
 }
 
 .main-header__toggle {
   display: none;
 }
 
-.main-header__navigation {
-  width: @mobile-width;
-  margin: @centerer-margin 33px;
+
+@media (max-width: @not-for-desktop) {
+  .main-header__top--closed {
+    opacity: 0.3;
+    margin-bottom: -66px;
+  }
+
+  .main-header__top--closed .main-header__toggle,
+  .main-header__top--opened .main-header__toggle {
+    display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  .main-header__top--closed .main-header__cross {
+    display: none;
+  }
+
+  .main-header__top--opened .main-header__cross {
+    display: block;
+  }
+
+  .main-header__top--opened .main-header__hamburger {
+    display: none;
+  }
 }
 
-.main-header__title {
-  padding: 0 10px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  color: @white;
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: @tablet-width;
+    min-height: auto;
+    background-size: cover;
+  }
+
+  .main-header__container {
+    width: @tablet-width;
+    padding: 25px 20px 40px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: @desktop-width;
+  }
+
+  .main-header__container {
+    width: auto;
+    background: none;
+  }
+
+  .main-header__top {
+    border: none;
+  }
+
+  .main-header__wrapper {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    min-height: 110px;
+    z-index: 3;
+  }
 }

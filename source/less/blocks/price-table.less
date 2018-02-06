@@ -14,17 +14,25 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: @light-font-color;
+  color: @font-color-base;
   text-transform: uppercase;
-  background-color: @white;
-  border: 2px solid @table-border-color;
+  background-color: @bg-white;
+  border: 2px solid @bg-light-grey;
 
   &--head {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    color: @white;
-    background-color: @light-font-color;
+    color: @font-color-secondary;
+    background-color: @font-color-base;
+  }
+
+  &--visible {
+    display: none;
+  }
+
+  &--empty {
+    display: none;
   }
 }
 
@@ -33,4 +41,49 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+}
+
+
+@media (min-width: @tablet-width) {
+  .price-table {
+    width: 620px;
+    margin: 0;
+  }
+
+  .price-table__cell {
+    width: 150px;
+    padding: 22px 11px;
+
+    &--visible {
+      display: block;
+      border: none;
+    }
+
+    &--empty {
+      display: block;
+      background-color: @bg-light-grey;
+      border: none;
+    }
+  }
+
+  .price-table__feature {
+    display: none;
+  }
+
+  .price-table__feature-name {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .price-table {
+    width: 940px;
+  }
+
+  .price-table__cell {
+    width: 235px;
+  }
 }

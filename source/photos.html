@@ -2,25 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пинк | Фотографии</title>
   </head>
   <link href="css/style.css" rel="stylesheet">
   <body>
+    <svg style="display: none">
+      <symbol id="hamburger" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+              <g>
+                <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+            </g>
+          </g>
+        </symbol>
+        <symbol id="cross" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+        </symbol>
+    </svg>
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__top">
-          <a class="main-header__logo logo">
-            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="logo">
-          </a>
-          <button class="main-header__toggle" type="button">Mеню</button>
+          <div class="main-header__container">
+            <a class="main-header__logo logo"></a>
+            <button class="main-header__toggle" type="button" aria-label="Mеню">
+              <svg class="main-header__hamburger" width="50" height="24"><use xlink:href="#hamburger"></use></svg>
+              <svg class="main-header__cross" width="24" height="24"><use xlink:href="#cross"></use></svg>
+            </button>
+          </div>
         </div>
         <nav class="main-header__navigation main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="photos.html">Фотографии</a>
+              <a class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -30,32 +51,36 @@
             </li>
           </ul>
         </nav>
-        <h1 class="main-header__title">Фотографии пользователей</h1>
       </div>
     </header>
     <main class="content">
+      <section class="bg-photo bg-photo--inner">
+        <h1 class="bg-photo__title">Фотографии пользователей</h1>
+      </section>
       <section class="photos">
         <h2 class="visually-hidden">Ознакомиться с постами пользователей</h2>
         <header class="photos__header" >
-          <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-          <p class="photos__text">Видите, как не хватает ваших?</p>
+          <p class="photos__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
-          <article class="photos-story">
-            <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
-            <a class="panorama" href="#">
-              <span class="panorama__text">Панорама дня</span>
-              <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
-            </a>
-            <div class="photos-story__post">
-              <b class="photos-story__author-name">Анна</b>
-              <span class="photos-story__post-time">(5 минут назад)</span>
-              <p class="photos-story__post-text">
-                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
-              </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 215</span>
+        <article class="panorama">
+          <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
+          <a class="panorama__link" href="#">
+            <span class="panorama__day">Панорама дня</span>
+            <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
+          </a>
+          <div class="panorama__post">
+            <b class="panorama__author-name">Анна</b>
+            <span class="panorama__post-time">(5 минут назад)</span>
+            <p class="panorama__post-text">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
+            </p>
+            <div class="panorama__likes-quantity">
+              <button class="panorama__heart" type="button">Сердечко</button>
+              <span class="panorama__like">Нравится: 215</span>
             </div>
-          </article>
+          </div>
+        </article>
+        <div class="photos__wrapper">
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Левон</h3>
             <a class="photos-story__author-picture" href="#">
@@ -67,8 +92,10 @@
               <p class="photos-story__post-text">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 356</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 356</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -82,8 +109,10 @@
               <p class="photos-story__post-text">
                 Соседи будут рады!
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 666</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 666</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -97,8 +126,10 @@
               <p class="photos-story__post-text">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 215</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 215</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -112,8 +143,10 @@
               <p class="photos-story__post-text">
                 Самая кубанская в мире!
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 4</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 4</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -127,8 +160,10 @@
               <p class="photos-story__post-text">
                 Где снег-то?
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 150</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 150</span>
+              </div>
             </div>
           </article>
           <article class="photos-story">
@@ -142,10 +177,13 @@
               <p class="photos-story__post-text">
                 Всем GM и взаимные лайки!
               </p>
-              <button class="photos-story__heart" type="button">Сердечко</button>
-              <span class="photos-story__like">Нравится: 2560</span>
+              <div class="photos-story__likes-quantity">
+                <button class="photos-story__heart" type="button">Сердечко</button>
+                <span class="photos-story__like">Нравится: 2560</span>
+              </div>
             </div>
           </article>
+        </div>
         <footer class="photos__footer">
           <p class="photos__text">Затмите их всех!</p>
           <p class="photos__text">Выкладывайте все, что накопилось в телефоне!</p>
@@ -159,35 +197,51 @@
               <img class="put-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="picture">
             </a>
           </fieldset>
-          <fieldset class="put-photo__correct">
-            <ul class="put-photo__effects">
-              <li class="put-photo__effect put-photo__effect--crop">
-                <button class="put-photo__tool" type="button">Обрезка</button>
-              </li>
-              <li class="put-photo__effect put-photo__effect--fill">
-                <button class="put-photo__tool" type="button">Заливка</button>
-              </li>
-              <li class="put-photo__effect put-photo__effect--contrast">
-                <button class="put-photo__tool" type="button">Контраст</button>
-              </li>
-            </ul>
-            <div class="put-photo__tune-up regulator">
-              <div class="regulator__scale">Шкала</div>
-              <div class="regulator__toggle">Бегунок</div>
+          <div class="put-photo__container">
+            <fieldset class="put-photo__correct">
+              <ul class="put-photo__effects">
+                <li class="put-photo__effect put-photo__effect--crop">
+                  <button class="put-photo__tool" type="button">Обрезка</button>
+                  <div class="put-photo__tune-up">
+                    <div class="regulator__scale">Шкала</div>
+                    <div class="regulator__toggle">Бегунок</div>
+                  </div>
+                </li>
+                <li class="put-photo__effect put-photo__effect--fill">
+                  <button class="put-photo__tool" type="button">Заливка</button>
+                  <div class="put-photo__tune-up">
+                    <div class="regulator__scale">Шкала</div>
+                    <div class="regulator__toggle">Бегунок</div>
+                  </div>
+                </li>
+                <li class="put-photo__effect put-photo__effect--contrast">
+                  <button class="put-photo__tool" type="button">Контраст</button>
+                  <div class="put-photo__tune-up">
+                    <div class="regulator__scale">Шкала</div>
+                    <div class="regulator__toggle">Бегунок</div>
+                  </div>
+                </li>
+              </ul>
+              <div class="regulator">
+                <div class="regulator__scale">Шкала</div>
+                <div class="regulator__toggle">Бегунок</div>
+              </div>
+            </fieldset>
+            <div class="put-photo__wrapper">
+              <div class="put-photo__btn-wrapper">
+                <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
+              </div>
+              <div class="put-photo__btn-wrapper">
+                <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
+              </div>
             </div>
-          </fieldset>
-          <div class="put-photo__btn-wrapper">
-            <button class="put-photo__button put-photo__button--post" type="submit">Запостить</button>
-          </div>
-          <div class="put-photo__btn-wrapper">
-            <button class="put-photo__button put-photo__button--cancel" type="reset">Отмена</button>
           </div>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__logo">
-        <a class="main-footer__logo-link">
+        <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
@@ -210,5 +264,30 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
       </section>
     </footer>
+    <!--<script>src="./js/script.js"</script>-->
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var mainHeaderTop = document.querySelector('.main-header__top');
+      var navToggle = document.querySelector('.main-header__toggle');
+
+      if(navMain && mainHeaderTop) {
+        navMain.classList.add('main-nav--closed');
+        mainHeaderTop.classList.add('main-header__top--closed')
+      }
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          mainHeaderTop.classList.remove('main-header__top--closed');
+          mainHeaderTop.classList.add('main-header__top--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          mainHeaderTop.classList.remove('main-header__top--opened');
+          mainHeaderTop.classList.add('main-header__top--closed');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -8,9 +8,8 @@
 }
 
 .tenderer-form__name {
-  .reset-fieldset();
   margin-bottom: 25px;
-  background-color: @white;
+  background-color: @bg-white;
 }
 
 .tenderer-form__item {
@@ -22,7 +21,7 @@
   padding-left: 20px;
   font-size: 14px;
   line-height: 30px;
-  color: @contacts-color;
+  color: @font-color-pink;
 }
 
 .tenderer-form__input {
@@ -31,13 +30,12 @@
   padding-left: 22px;
   font-size: 18px;
   line-height: 30px;
-  color: @light-font-color;
+  color: @font-color-base;
   border: 2px solid @tenderer-input-color;
   box-sizing: border-box;
 }
 
 .tenderer-form__achievements {
-  .reset-fieldset();
   margin-bottom: 40px;
   padding: 40px 0 50px;
   background-color: @bg-light-grey;
@@ -49,8 +47,16 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: @contacts-color;
+  color: @font-color-pink;
   text-transform: uppercase;
+
+  &--impress {
+    margin-bottom: 20px;
+  }
+
+  &--contacts {
+    display: none;
+  }
 }
 
 .tenderer-form__piece {
@@ -59,7 +65,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: @light-font-color;
+  color: @font-color-base;
   text-align: left;
 }
 
@@ -71,19 +77,17 @@
     left: 20px;
     width: 35px;
     height: 35px;
-    background-color: @white;
+    background-color: @bg-white;
     border: 2px solid @tenderer-input-color;
   }
 }
 
 .tenderer-form__contacts {
-  .reset-fieldset();
   margin-bottom: 25px;
-  background-color: @white;
+  background-color: @bg-white;
 }
 
 .tenderer-form__app-type {
-  .reset-fieldset();
   margin-bottom: 40px;
   padding: 40px 0 50px;
   background-color: @bg-light-grey;
@@ -97,24 +101,10 @@
     left: 20px;
     width: 35px;
     height: 35px;
-    background-color: @white;
+    background-color: @bg-white;
     border: 2px solid @tenderer-input-color;
     border-radius: 50%;
   }
-}
-
-
-.tenderer-form__share-impress {
-  .reset-fieldset();
-}
-
-.tenderer-form__impress {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: @contacts-color;
-  text-transform: uppercase;
 }
 
 .tenderer-form__tale {
@@ -124,8 +114,166 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
-  color: @light-font-color;
+  color: @font-color-base;
   text-align: left;
   border: 2px solid @table-border-color;
   box-sizing: border-box;
+}
+
+
+@media (min-width: @tablet-width) {
+  .tenderer-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tenderer-form__title {
+    display: block;
+    position: relative;
+    top: -50px;
+    width: 366px;
+    margin: @centerer-margin;
+    background-color: @bg-white;
+
+    &--impress {
+      top: -10px;
+      width: 260px;
+      margin-bottom: 20px;
+    }
+
+    &--contacts {
+      top: -10px;
+      width: 256px;
+      margin-bottom: 40px;
+    }
+
+    &--achievements {
+      width: 400px;
+    }
+  }
+
+  .tenderer-form__breack {
+    display: none;
+  }
+
+  .tenderer-form__app-type {
+    order: 1;
+    background: none;
+    border: 2px solid @table-border-color;
+  }
+
+  .tenderer-form__contacts {
+    order: 2;
+    border: 2px solid @table-border-color;
+  }
+
+  .tenderer-form__achievements {
+    order: 3;
+    background: none;
+    border: 2px solid @table-border-color;
+  }
+
+  .tenderer-form__share-impress {
+    order: 4;
+    border: 2px solid @table-border-color;
+  }
+
+  .tenderer-form__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+
+    &--contacts {
+      flex-direction: column;
+    }
+  }
+
+  .tenderer-form__label {
+    &--contacts {
+      order: 1;
+    }
+  }
+
+  .tenderer-form__input {
+    width: 525px;
+
+    &--name {
+      width: 565px;
+    }
+  }
+
+  .tenderer-form__tale {
+    width: 500px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .tenderer-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: @desktop-width;
+    padding: 0 10px;
+  }
+
+  .tenderer-form__name {
+    width: 450px;
+    margin-right: 40px;
+    border: 2px solid @white;
+  }
+
+  .tenderer-form__app-type {
+    width: 450px;
+  }
+
+  .tenderer-form__contacts {
+    width: 940px;
+    margin: @centerer-margin 60px;
+  }
+
+  .tenderer-form__achievements {
+    width: 940px;
+    margin: @centerer-margin 60px;
+  }
+
+  .tenderer-form__share-impress {
+    width: 940px;
+    margin: @centerer-margin 66px;
+  }
+
+  .tenderer-form__input {
+    width: 340px;
+
+    &--name {
+      width: 380px;
+    }
+  }
+
+  .tenderer-form__tale {
+    width: 820px;
+  }
+
+  .tenderer-form__list {
+    &--contacts {
+      display: flex;
+      justify-content: space-between;
+      width: 820px;
+      margin: @centerer-margin;
+    }
+  }
+
+  .tenderer-form__register {
+    &--achievements {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .tenderer-form__piece {
+    &--achievements {
+      width: 290px;
+      box-sizing: border-box;
+    }
+  }
 }

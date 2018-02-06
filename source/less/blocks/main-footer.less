@@ -3,6 +3,10 @@
   margin: @centerer-margin;
   padding: 40px 0 35px;
   text-align: center;
+
+  &--main-sheet {
+    display: none;
+  }
 }
 
 .main-footer__logo {
@@ -11,4 +15,25 @@
 
 .main-footer__social {
   margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &--main-sheet {
+      display: flex;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    width: @desktop-width;
+  }
 }

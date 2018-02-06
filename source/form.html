@@ -2,59 +2,83 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пинк | Принять участие в конкурсе</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <svg style="display: none">
+      <symbol id="hamburger" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+              <g>
+                <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+            </g>
+          </g>
+        </symbol>
+        <symbol id="cross" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+          <path fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+        </symbol>
+    </svg>
     <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__top">
-          <a class="main-header__logo logo">
-            <img class="logo__image" src="./img/logo-pink-white-mobile.svg" width="75" height="23" alt="logo">
-          </a>
-          <button class="main-header__toggle" type="button">Mеню</button>
+          <div class="main-header__container">
+            <a class="main-header__logo logo"></a>
+            <button class="main-header__toggle" type="button" aria-label="Mеню">
+              <svg class="main-header__hamburger" width="50" height="24"><use xlink:href="#hamburger"></use></svg>
+              <svg class="main-header__cross" width="24" height="24"><use xlink:href="#cross"></use></svg>
+            </button>
+          </div>
         </div>
         <nav class="main-header__navigation main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photos.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
+              <a class="main-nav__link">Конкурс</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
-        <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="content">
+      <section class="bg-photo bg-photo--inner">
+        <h1 class="bg-photo__title bg-photo__title--competition">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
       <section class="for-tenderer">
         <h2 class="visually-hidden">Форма для участника конкурса</h2>
         <header class="for-tenderer__header">
           <p class="for-tenderer__text">
             Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            <span class="for-tenderer__text for-tenderer__text--visual">Пожалуйста, заполните форму ниже:</span>
           </p>
         </header>
-        <form class="tenderer-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="tenderer-form__name field-name">
-            <legend class="visually-hidden">Введите свои ФИО</legend>
+        <form class="tenderer-form" method="post" id="tenderer-form" action="https://echo.htmlacademy.ru">
+          <div class="tenderer-form__name">
+            <h2 class="visually-hidden">Введите свои ФИО</h2>
             <ul class="tenderer-form__list">
               <li class="tenderer-form__item">
                 <label class="tenderer-form__label" for="surname">Фамилия:</label>
                 <div>
-                  <input class="tenderer-form__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                  <input class="tenderer-form__input tenderer-form__input--surname" type="text" id="surname" placeholder="Укажите фамилию*" required>
                 </div>
               </li>
               <li class="tenderer-form__item">
                 <label class="tenderer-form__label" for="name">Имя:</label>
                 <div>
-                  <input class="tenderer-form__input" type="text" id="name" placeholder="Введите ваше имя*" required>
+                  <input class="tenderer-form__input tenderer-form__input--name" type="text" id="name" placeholder="Введите ваше имя*" required>
                 </div>
               </li>
               <li class="tenderer-form__item">
@@ -64,54 +88,54 @@
                 </div>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="tenderer-form__achievements">
-            <h2 class="tenderer-form__title">Ваши безбашенные<br> достижения в путешествии</h2>
-            <ul class="tenderer-form__register">
-              <li class="tenderer-form__piece">
+          </div>
+          <div class="tenderer-form__achievements">
+            <h2 class="tenderer-form__title tenderer-form__title--achievements">Ваши безбашенные<br class="tenderer-form__breack"> достижения в путешествии</h2>
+            <ul class="tenderer-form__register tenderer-form__register--achievements">
+              <li class="tenderer-form__piece tenderer-form__piece--achievements">
                 <input class="visually-hidden" type="checkbox" id="selfie" tabindex="0" checked>
                 <label class="tenderer-form__achievement" for="selfie">Сделал селфи с акулой</label>
               </li>
-              <li class="tenderer-form__piece">
+              <li class="tenderer-form__piece tenderer-form__piece--achievements">
                 <input class="visually-hidden" type="checkbox" id="beach" tabindex="0" checked>
                 <label class="tenderer-form__achievement" for="beach">Обгорел на пляже</label>
               </li>
-              <li class="tenderer-form__piece">
+              <li class="tenderer-form__piece tenderer-form__piece--achievements">
                 <input class="visually-hidden" type="checkbox" id="saw-chack" tabindex="0">
                 <label class="tenderer-form__achievement" for="saw-chack">Видел Чака Норриса</label>
               </li>
-              <li class="tenderer-form__piece">
+              <li class="tenderer-form__piece tenderer-form__piece--achievements">
                 <input class="visually-hidden" type="checkbox" id="bye-souvenirs" tabindex="0">
                 <label class="tenderer-form__achievement" for="bye-souvenirs">Накупил сувениров</label>
               </li>
-              <li class="tenderer-form__piece">
+              <li class="tenderer-form__piece tenderer-form__piece--achievements">
                 <input class="visually-hidden" type="checkbox" id="hold-tower" tabindex="0" checked>
                 <label class="tenderer-form__achievement" for="hold-tower">Удержал башню</label>
               </li>
-              <li class="tenderer-form__piece">
+              <li class="tenderer-form__piece tenderer-form__piece--achievements">
                 <input class="visually-hidden" type="checkbox" id="crushed-hotel" tabindex="0">
                 <label class="tenderer-form__achievement" for="crushed-hotel">Разгромил отель</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="tenderer-form__contacts">
-            <legend class="visually-hidden">А теперь укажите как с вами связаться</legend>
-            <ul class="tenderer-form__list">
-              <li class="tenderer-form__item">
-                <label class="tenderer-form__label" for="phone">Номер телефона</label>
+          </div>
+          <div class="tenderer-form__contacts">
+            <h2 class="tenderer-form__title tenderer-form__title--contacts">Контактная информация</h2>
+            <ul class="tenderer-form__list tenderer-form__list--contacts">
+              <li class="tenderer-form__item tenderer-form__item--contacts">
+                <label class="tenderer-form__label tenderer-form__label--contacts" for="phone">Номер телефона</label>
                 <div>
                   <input class="tenderer-form__input" type="tel" id="phone" placeholder="Номер, пожалуйста">
                 </div>
               </li>
-              <li class="tenderer-form__item">
-                <label class="tenderer-form__label">Адрес почты</label>
+              <li class="tenderer-form__item tenderer-form__item--contacts">
+                <label class="tenderer-form__label tenderer-form__label--contacts">Адрес почты</label>
                 <div>
                   <input class="tenderer-form__input" type="tel" name="phone" placeholder="Введите почту*" required>
                 </div>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="tenderer-form__app-type">
+          </div>
+          <div class="tenderer-form__app-type">
             <h2 class="tenderer-form__title">С каким приложением путешествовали?</h2>
             <ul class="tenderer-form__register">
               <li class="tenderer-form__piece">
@@ -127,24 +151,22 @@
                 <label class="tenderer-form__application" for="win-phone">Pink для Windows Phone</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="tenderer-form__share-impress">
-            <legend class="visually-hidden">Расскажите свою историю</legend>
-            <h2 class="tenderer-form__impress" for="tale">Опишите свои эмоции</h2>
+          </div>
+          <div class="tenderer-form__share-impress">
+            <h2 class="tenderer-form__title tenderer-form__title--impress">Опишите свои эмоции</h2>
+            <label class="visually-hidden" for="tale"></label>
             <textarea class="tenderer-form__tale" tabindex="0" id="tale">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fieldset>
-          <button class="tenderer-form__send-form btn" type="submit">Отправить форму</button>
+          </div>
         </form>
         <footer class="for-tenderer__footer">
-          <p class="for-tenderer__text for-tenderer__text--uppercase">
-            * - обязательные поля
-          </p>
+          <button class="tenderer-form__send-form btn" form="tenderer-form" type="submit">Отправить форму</button>
+          <p class="for-tenderer__text for-tenderer__text--uppercase">* - обязательные<span class="for-tenderer__hidden"> для заполнения</span> поля</p>
         </footer>
       </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__logo">
-        <a class="main-footer__logo-link">
+        <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="183" height="50" alt="logo">
         </a>
       </section>
@@ -185,5 +207,30 @@
         <button class="modal-report__close btn" type="button">Ок</button>
       </footer>
     </div>
+    <!--<script>src="./js/script.js"</script>-->
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var mainHeaderTop = document.querySelector('.main-header__top');
+      var navToggle = document.querySelector('.main-header__toggle');
+
+      if(navMain && mainHeaderTop) {
+        navMain.classList.add('main-nav--closed');
+        mainHeaderTop.classList.add('main-header__top--closed')
+      }
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          mainHeaderTop.classList.remove('main-header__top--closed');
+          mainHeaderTop.classList.add('main-header__top--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          mainHeaderTop.classList.remove('main-header__top--opened');
+          mainHeaderTop.classList.add('main-header__top--closed');
+        }
+      });
+    </script>
   </body>
 </html>

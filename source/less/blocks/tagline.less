@@ -1,0 +1,48 @@
+.tagline {
+  width: @mobile-width;
+  margin: @centerer-margin;
+}
+
+.tagline__text {
+  margin: 0;
+  padding: 40px 55px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: @font-color-base;
+  text-align: center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .tagline {
+    width: @tablet-width;
+    padding: 65px 20px 50px;
+  }
+
+  .tagline__text {
+    padding: 0;
+    font-size: 40px;
+    line-height: 45px;
+
+    &:nth-child(2) {
+      padding: 0 100px;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .tagline {
+    width: @desktop-width;
+    padding: 80px 130px 70px;
+  }
+
+  .tagline__text {
+    font-size: 50px;
+
+    &:nth-child(2) {
+      padding: 0 150px;
+    }
+  }
+}

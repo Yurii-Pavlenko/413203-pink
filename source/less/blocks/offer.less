@@ -1,13 +1,8 @@
 .offer {
   width: @mobile-width;
-  min-height: 270px;
-  margin: @centerer-margin 55px;
-}
-
-.offer__header {
-  padding-top: 45px;
+  padding-top: 44px;
   text-align: center;
-  color: @white;
+  color: @font-color-secondary;
   background-color: @bg-offer-color;
 }
 
@@ -19,8 +14,8 @@
   text-align: center;
   line-height: 18px;
   font-weight: 700;
-  color: @white;
-  border: 3px solid @white;
+  color: @font-color-secondary;
+  border: 3px solid @btn-border-color;
   border-radius: 28px;
 }
 
@@ -45,12 +40,24 @@
   font-weight: 300;
 }
 
-.offer__text {
-  margin: 0;
-  padding: 40px 55px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 300;
-  color: @light-font-color;
-  text-align: center;
+
+@media (min-width: @tablet-width) {
+  .offer {
+    position: static;
+    width: 350px;
+    margin: 0;
+    background: none;
+  }
+
+
+  .offer__explanation {
+    width: 350px;
+    padding: 0;
+    font-size: 18px;
+    color: @font-color-secondary;
+  }
+
+  .offer__download {
+    width: 300px;
+  }
 }
