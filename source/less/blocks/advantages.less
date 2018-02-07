@@ -1,7 +1,7 @@
 .advantages {
   position: relative;
   width: @mobile-width;
-  min-height: 810px;
+  min-height: 745px;
   margin: @centerer-margin;
   padding-top: 86px;
   background: @bg-light-grey url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
@@ -9,10 +9,19 @@
   &::before {
     content: "";
     position: absolute;
-    top: -30px;
+    top: 0;
     width: 320px;
     height: 35px;
-    background: url("../../img/bg-triangle-white.svg") no-repeat 0 0;
+    background: url("../img/bg-triangle-white-mobile.svg") no-repeat 0 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 790px;
+    width: 320px;
+    height: 41px;
+    background: @bg-white;
   }
 }
 
@@ -27,12 +36,13 @@
 
 .advantages__title {
   margin: 0 0 9px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .advantages__description {
-  margin: 0 0 40px;
+  margin: 0 0 34px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
