@@ -11,16 +11,31 @@
 
 .main-nav__item {
   width: @mobile-width;
-  padding: 20px 0;
+  height: 63px;
+  padding: 18px 0;
   background-color: @bg-darkblue;
-  border-bottom: 1px solid @border-lighter-color;
+  border-top: 1px solid @border-lighter-color;
+  border-bottom: 1px solid @border-color-black;
+  box-sizing: border-box;
 }
 
 .main-nav__link {
-  line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
   color: @font-color-secondary;
+
+  &:hover,
+  &:focus {
+    color: @font-color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid @btn-border-color;
+  }
 }
 
 

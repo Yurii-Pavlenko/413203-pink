@@ -1,6 +1,6 @@
 .offer {
   width: @mobile-width;
-  padding-top: 44px;
+  padding-top: 27px;
   text-align: center;
   color: @font-color-secondary;
   background-color: @bg-offer-color;
@@ -8,9 +8,9 @@
 
 .offer__download {
   display: inline-block;
-  width: 240px;
+  width: 243px;
   margin-bottom: 40px;
-  padding: 15px;
+  padding: 17px;
   text-align: center;
   line-height: 18px;
   font-weight: 700;
@@ -28,16 +28,40 @@
 .offer__item {
   width: 70px;
   height: 60px;
-  margin-right: 10px;
-  background-color: #616c77;
 }
 
 .offer__explanation {
   margin: 0;
-  padding: 25px 40px 35px;
+  padding: 8px 40px 33px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+}
+
+.offer__link {
+  display: block;
+  background-repeat: no-repeat;
+
+  &--apple {
+    width: 58px;
+    height: 71px;
+    margin-top: -9px;
+    background-image: url("../img/logo-apple.svg");
+  }
+
+  &--android {
+    width: 53px;
+    height: 59px;
+    margin-left: 14px;
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--windows {
+    width: 55px;
+    height: 52px;
+    margin: 3px 0 0 22px;
+    background-image: url("../img/logo-microsoft.svg");
+  }
 }
 
 

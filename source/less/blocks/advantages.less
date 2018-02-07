@@ -1,8 +1,19 @@
 .advantages {
+  position: relative;
   width: @mobile-width;
   min-height: 810px;
   margin: @centerer-margin;
+  padding-top: 86px;
   background: @bg-light-grey url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 320px;
+    height: 35px;
+    background: url("../../img/bg-triangle-white.svg") no-repeat 0 0;
+  }
 }
 
 .advantages__list {
@@ -15,7 +26,7 @@
 }
 
 .advantages__title {
-  margin: 0 0 18px;
+  margin: 0 0 9px;
   line-height: 24px;
   font-weight: 700;
 }
