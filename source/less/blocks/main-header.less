@@ -6,15 +6,16 @@
 
 .main-header__top {
   background-color: @bg-darkblue;
-  border-bottom: 1px solid @border-lighter-color;
+  border-bottom: 1px solid @border-color-black;
 }
 
 .main-header__container {
   width: @mobile-width;
+  height: 70px;
   display: flex;
   margin: @centerer-margin;
   justify-content: space-between;
-  padding: 20px 26px;
+  padding: 20px 26px 0;
   box-sizing: border-box;
 }
 
@@ -25,7 +26,7 @@
 
 @media (max-width: @not-for-desktop) {
   .main-header__top--closed {
-    opacity: 0.3;
+    opacity: 0.8;
     margin-bottom: -70px;
   }
 
@@ -33,7 +34,7 @@
   .main-header__top--opened .main-header__toggle {
     display: block;
     padding: 0;
-    border: none;
+/*    border: none;*/
     background-color: transparent;
   }
 
