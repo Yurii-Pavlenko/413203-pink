@@ -23,11 +23,16 @@
   display: none;
 }
 
+.main-header__top--closed {
+  opacity: 0.8;
+  margin-bottom: -70px;
+}
+
 
 @media (max-width: @not-for-desktop) {
   .main-header__top--closed {
     opacity: 0.8;
-    margin-bottom: -70px;
+    margin-bottom: -115px;
   }
 
   .main-header__top--closed .main-header__toggle,
@@ -35,16 +40,15 @@
     display: block;
     width: 50px;
     height: 24px;
-    padding: 0;
     border: none;
     background-color: transparent;
 
-    &:hover path,
-    &:focus path {
+    &:hover svg,
+    &:focus svg {
       fill: @font-color-pink;
     }
 
-    &:active path {
+    &:active svg {
       opacity: 0.3;
     }
   }
@@ -75,7 +79,12 @@
 
   .main-header__container {
     width: @tablet-width;
+    height: 110px;
     padding: 25px 20px 40px;
+  }
+
+  .main-header__toggle {
+    padding: 20px 0;
   }
 }
 

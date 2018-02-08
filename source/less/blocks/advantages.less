@@ -53,10 +53,35 @@
   .advantages {
     width: @tablet-width;
     min-height: auto;
-    padding: 0 20px;
+    padding: 70px 20px 0;
+    background: @bg-light-grey;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      width: 660px;
+      height: 95px;
+      background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 790px;
+      width: 320px;
+      height: 41px;
+      background: @bg-white;
+    }
+  }
+
+  .advantages__wrapper {
+    position: relative;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
     background-size: 270px 480px;
     background-position: 20px 0;
-    box-sizing: border-box;
   }
 
   .advantages__list {
