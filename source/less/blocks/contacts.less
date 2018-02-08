@@ -6,14 +6,18 @@
 }
 
 .contacts__title {
-  margin: 0 0 45px 0;
+  margin: 0 0 30px 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
 }
 
 .contacts__item {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
+
+  &:nth-child(2) {
+    margin-bottom: 21px;
+  }
 }
 
 .contacts__call {
@@ -35,13 +39,13 @@
 .contacts__footer {
   position: relative;
   width: @mobile-width;
-  min-height: 200px;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
+  min-height: 220px;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat -135px -10px, url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
 }
 
 .contacts__marker {
   position: absolute;
-  top: 95px;
+  top: 115px;
   left: 143px;
   width: 45px;
   height: 45px;

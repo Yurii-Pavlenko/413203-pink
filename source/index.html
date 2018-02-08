@@ -183,16 +183,16 @@
               <thead>
                 <tr class="price-table__head">
                   <td class="price-table__cell price-table__cell--empty"></td>
-                  <th class="price-table__cell price-table__cell--head">
+                  <th class="price-table__cell-head">
                     База
                     <p class="price-table__licence-price">1,99usd</p>
                   </th>
-                  <th class="price-table__cell price-table__cell--head">
+                  <th class="price-table__cell-head">
                     Стандарт
                     <p class="price-table__licence-price">3,99usd</p>
                     <span class="price-table__hit">Хит</span>
                   </th>
-                  <th class="price-table__cell price-table__cell--head">
+                  <th class="price-table__cell-head">
                     Анлим
                     <p class="price-table__licence-price">9,99usd</p>
                   </th>
@@ -204,16 +204,22 @@
                     <span class="price-table__feature-name">Розовый фильтр</span>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Розовый фильтр</span>
-                    <span class="price-table__condition">Да</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Розовый фильтр</span>
+                      <span class="price-table__condition price-table__condition--yes" aria-label="Да"></span>
+                    </div>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Розовый фильтр</span>
-                    <span class="price-table__condition">Да</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Розовый фильтр</span>
+                      <span class="price-table__condition price-table__condition--yes" aria-label="Да"></span>
+                    </div>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Розовый фильтр</span>
-                    <span class="price-table__condition">Да</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Розовый фильтр</span>
+                      <span class="price-table__condition price-table__condition--yes" aria-label="Да"></span>
+                    </div>
                   </td>
                 </tr>
                 <tr class="price-table__row">
@@ -221,16 +227,22 @@
                     <span class="price-table__feature-name">Смайлики</span>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Смайлики</span>
-                    <span class="price-table__condition">Нет</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Смайлики</span>
+                      <span class="price-table__condition price-table__condition--no" aria-label="Нет"></span>
+                    </div>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Смайлики</span>
-                    <span class="price-table__condition">Да</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Смайлики</span>
+                      <span class="price-table__condition price-table__condition--yes" aria-label="Да"></span>
+                    </div>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Смайлики</span>
-                    <span class="price-table__condition">Да</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Смайлики</span>
+                      <span class="price-table__condition price-table__condition--yes" aria-label="Да"></span>
+                    </div>
                   </td>
                 </tr>
                 <tr class="price-table__row">
@@ -238,24 +250,30 @@
                     <span class="price-table__feature-name">Комментарии</span>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Комментарии</span>
-                    <span class="price-table__condition">Нет</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Комментарии</span>
+                      <span class="price-table__condition price-table__condition--no" aria-label="Нет"></span>
+                    </div>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Комментарии</span>
-                    <span class="price-table__condition">Нет</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Комментарии</span>
+                      <span class="price-table__condition price-table__condition--no" aria-label="Нет"></span>
+                    </div>
                   </td>
                   <td class="price-table__cell">
-                    <span class="price-table__feature">Комментарии</span>
-                    <span class="price-table__condition">Да</span>
+                    <div class="price-table_wrapper">
+                      <span class="price-table__feature">Комментарии</span>
+                      <span class="price-table__condition price-table__condition--yes" aria-label="Да"></span>
+                    </div>
                   </td>
                 </tr>
               </tbody>
             </table>
           <p class="price-list__toggles price-slider__toggles">
-            <button class="price-slider__toggle" type="button">1</button>
-            <button class="price-slider__toggle" type="button">2</button>
-            <button class="price-slider__toggle" type="button">3</button>
+            <button class="price-slider__toggle" type="button"></button>
+            <button class="price-slider__toggle price-slider__toggle--active" type="button"></button>
+            <button class="price-slider__toggle" type="button"></button>
           </p>
         </div>
       </section>
