@@ -40,7 +40,7 @@
   position: relative;
   width: @mobile-width;
   min-height: 220px;
-  background: url("../img/bg-triangle-white-footer.svg") no-repeat -135px -10px, url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
 }
 
 .contacts__marker {
@@ -56,16 +56,17 @@
 @media (min-width: @tablet-width) {
   .contacts {
     width: @tablet-width;
-    padding: 0 20px;
     box-sizing: border-box;
   }
 
   .contacts__header {
-    padding: 8px 125px;
+    padding: 0 100px;
   }
 
   .contacts__title {
+    margin-bottom: 40px;
     font-size: 40px;
+    line-height: 48px;
   }
 
   .contacts__wrapper {
@@ -78,17 +79,50 @@
 
   .contacts__item {
     width: 270px;
+    margin-bottom: 45px;
+    text-align: left;
+
+    &--address {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+
+  .contacts__call {
+    padding-left: 69px;
+    text-align: left;
+
+    &--write {
+      padding-left: 120px;
+    }
+
+    &--address {
+      padding-left: 37px;
+    }
+  }
+
+  .contacts__facts {
+    padding: 0 8px;
+
+    &--mail {
+      padding-left: 40px;
+    }
+
+    &--address {
+      padding-left: 3px;
+    }
   }
 
   .contacts__footer {
     width: @tablet-width;
     min-height: 375px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat -1480px -305px, url("../img/bg-map-mobile@1x.png") no-repeat 0 bottom;
     background-size: cover;
   }
 
   .contacts__marker {
-    top: 180px;
-    left: 330px;
+    top: 187px;
+    left: 312px;
   }
 }
 
