@@ -1,6 +1,6 @@
 .copyright {
+  display: flex;
   text-align: left;
-  position: relative;
 }
 
 .copyright__text {
@@ -12,18 +12,26 @@
 }
 
 .copyright__link {
-  position: absolute;
-  top: 0;
-  left: 200px;
-  width: 75px;
-  height: 75px;
-  background: url("../img/logo-htmlacademy.svg") no-repeat 0 0;
+  display: block;
+  width: 55px;
+  height: 55px;
+  color: @font-color-pink;
+
+  &:hover svg,
+  &:focus svg {
+    color: @darkblue-color;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 
 @media (min-width: @tablet-width) {
   .copyright {
     width: 150px;
+    padding: 20px 0 0 5px;
     box-sizing: border-box;
   }
 
@@ -32,6 +40,6 @@
   }
 
   .copyright__link {
-    left: 120px;
+    margin: -13px 0 0 -15px;
   }
 }

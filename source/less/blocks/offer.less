@@ -17,6 +17,17 @@
   color: @font-color-secondary;
   border: 3px solid @btn-border-color;
   border-radius: 28px;
+
+  &:hover,
+  &:focus {
+    color: @font-color-pink;
+    background-color: @bg-white;
+  }
+
+  &:active span {
+    opacity: 0.3;
+    background-color: @bg-white;
+  }
 }
 
 .offer__list {
