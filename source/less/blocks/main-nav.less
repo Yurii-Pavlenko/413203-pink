@@ -12,7 +12,7 @@
 .main-nav__item {
   width: @mobile-width;
   height: 63px;
-  padding: 18px 0;
+  padding: 15px 0;
   background-color: @bg-darkblue;
   border-top: 1px solid @border-lighter-color;
   border-bottom: 1px solid @border-color-black;
@@ -20,6 +20,8 @@
 }
 
 .main-nav__link {
+  font-size: 18px;
+  line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
   color: @font-color-secondary;
@@ -52,30 +54,31 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     width: @tablet-width;
+    margin: 0;
   }
 
   .main-nav__item {
     width: @tablet-width;
-    padding-top: 20px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: @desktop-width;
+    width: 640px;
   }
 
   .main-nav__list {
     display: flex;
-    width: 940px;
-    margin: @centerer-margin;
-    padding: 0 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
   }
 
   .main-nav__item {
     width: auto;
-    margin-right: 77px;
+    margin-right: 18px;
+    padding-top: 31px;
     background: none;
     border: none;
   }
@@ -83,5 +86,8 @@
   .main-nav__link {
     display: block;
     padding-top: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
   }
 }
