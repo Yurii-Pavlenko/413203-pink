@@ -80,13 +80,26 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
+    position: relative;
     width: @desktop-width;
     margin-top: -55px;
     padding: 0 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -110px;
+      left: 463px;
+      width: 98px;
+      height: 80px;
+      background: url("../img/icon-quotes.svg") no-repeat 0 0;
+    }
   }
 
   .reviews__text {
+    margin-bottom: 32px;
     padding: 0 120px 0 145px;
+    line-height: 31px;
   }
 
   .reviews__author-wrapper {
@@ -103,5 +116,33 @@
     padding-left: 16px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .reviews__button {
+    background: none;
+    border: none;
+    font-size: 0;
+    color: @btn-arrow-color;
+
+    &--left {
+      position: absolute;
+      top: 28px;
+      left: 27px;
+    }
+
+    &--right {
+      position: absolute;
+      top: 28px;
+      right: 2px;
+    }
+
+    &:hover,
+    &:focus {
+      color: @point-reviews-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
