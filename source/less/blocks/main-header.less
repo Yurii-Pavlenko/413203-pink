@@ -1,20 +1,21 @@
 .main-header {
   width: @mobile-width;
-  margin: @centerer-margin;
+  margin: @centerer-margin 4px;
   text-align: center;
 }
 
 .main-header__top {
   background-color: @bg-darkblue;
-  border-bottom: 1px solid @border-lighter-color;
+  border-bottom: 1px solid @border-color-black;
 }
 
 .main-header__container {
   width: @mobile-width;
+  height: 70px;
   display: flex;
   margin: @centerer-margin;
   justify-content: space-between;
-  padding: 20px 26px;
+  padding: 20px 18px 0 19px;
   box-sizing: border-box;
 }
 
@@ -22,19 +23,38 @@
   display: none;
 }
 
+.main-header__top--closed {
+  opacity: 0.8;
+  margin-bottom: -70px;
+}
+
 
 @media (max-width: @not-for-desktop) {
   .main-header__top--closed {
-    opacity: 0.3;
-    margin-bottom: -66px;
+    opacity: 0.8;
+    margin-bottom: -115px;
   }
 
   .main-header__top--closed .main-header__toggle,
   .main-header__top--opened .main-header__toggle {
     display: block;
-    padding: 0;
+    width: 50px;
+    height: 24px;
     border: none;
     background-color: transparent;
+
+    &:hover svg,
+    &:focus svg {
+      fill: @font-color-pink;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+  }
+
+  .main-header__top--opened .main-header__toggle {
+    width: 24px;
   }
 
   .main-header__top--closed .main-header__cross {
@@ -59,30 +79,46 @@
 
   .main-header__container {
     width: @tablet-width;
+    height: 110px;
     padding: 25px 20px 40px;
+  }
+
+  .main-header__toggle {
+    padding: 20px 0;
   }
 }
 
 
 @media (min-width: @desktop-width) {
   .main-header {
-    width: @desktop-width;
+    width: 1200px;
+    min-height: 110px;
+    position: relative;
+    z-index: 1;
+    background-color: @darkblue-color;
+    opacity: 0.7;
   }
 
   .main-header__container {
     width: auto;
+    padding: 27px 0 0 0;
     background: none;
   }
 
   .main-header__top {
     border: none;
+    opacity: 1;
+    margin-bottom: 0;
   }
 
   .main-header__wrapper {
     position: relative;
     display: flex;
-    width: 1200px;
+    justify-content: space-between;
+    width: @desktop-width;
     min-height: 110px;
-    z-index: 3;
+    margin: @centerer-margin;
+    padding: 0 10px;
+    z-index: 0;
   }
 }

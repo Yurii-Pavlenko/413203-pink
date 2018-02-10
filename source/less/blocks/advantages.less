@@ -1,8 +1,28 @@
 .advantages {
+  position: relative;
   width: @mobile-width;
-  min-height: 810px;
+  min-height: 745px;
   margin: @centerer-margin;
+  padding-top: 86px;
   background: @bg-light-grey url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 320px;
+    height: 35px;
+    background: url("../img/bg-triangle-white-mobile.svg") no-repeat 0 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 790px;
+    width: 320px;
+    height: 41px;
+    background: @bg-white;
+  }
 }
 
 .advantages__list {
@@ -15,13 +35,14 @@
 }
 
 .advantages__title {
-  margin: 0 0 18px;
+  margin: 0 0 9px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .advantages__description {
-  margin: 0 0 40px;
+  margin: 0 0 34px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -30,21 +51,54 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
+    display: flex;
+    justify-content: space-between;
     width: @tablet-width;
-    min-height: auto;
-    padding: 0 20px;
-    background-size: 270px 480px;
-    background-position: 20px 0;
+    min-height: 485px;
+    padding: 0 20px 0;
+    background: @bg-light-grey;
     box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -42px;
+      right: 0;
+      width: 660px;
+      height: 95px;
+      background: url("../img/bg-triangle-white.svg") no-repeat -1px 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 490px;
+      width: 660px;
+      height: 39px;
+      background: @bg-white;
+    }
+  }
+
+  .advantages__wrapper {
+    position: relative;
+    width: 270px;
+    height: inherit;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: 270px 550px;
   }
 
   .advantages__list {
-    width: 305px;
-    margin-left: 350px;
+    width: 310px;
+    padding-top: 70px;
   }
 
   .advantages__item {
+    padding: 0;
     text-align: left;
+  }
+
+  .advantages__description {
+    margin-bottom: 38px;
   }
 }
 
