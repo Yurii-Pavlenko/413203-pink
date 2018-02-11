@@ -1,7 +1,5 @@
 .logo {
   display: block;
-  position: relative;
-  z-index: 0;
   width: 77px;
   height: 24px;
   cursor: pointer;
@@ -17,7 +15,8 @@
 }
 
 .logo__image {
-  &--tablet {
+  &--tablet,
+  &--desktop {
     display: none;
   }
 }
@@ -27,6 +26,7 @@
   .logo {
     width: 150px;
     height: 41px;
+    color: @font-color-secondary;
   }
 
   .logo__image {
@@ -35,6 +35,19 @@
     }
 
     &--tablet {
+      display: block;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .logo__image {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
       display: block;
     }
   }

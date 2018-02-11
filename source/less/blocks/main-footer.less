@@ -42,6 +42,12 @@
       display: flex;
     }
   }
+
+  .main-footer__image {
+    &--desktop {
+      display: none;
+    }
+  }
 }
 
 
@@ -52,7 +58,29 @@
   }
 
   .main-footer__social {
+    padding: 0 0 0 28px;
+  }
 
-    padding: 5px 0 0 20px;
+  .main-footer__image {
+    &--desktop {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
+
+  .main-footer__logo-link {
+    color: @darkblue-color;
+
+    &:hover svg,
+    &:focus svg {
+      color: @font-color-pink;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
   }
 }
