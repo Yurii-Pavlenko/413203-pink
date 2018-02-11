@@ -1,6 +1,6 @@
 .copyright {
   display: flex;
-  text-align: left;
+  justify-content: space-between;
 }
 
 .copyright__text {
@@ -30,7 +30,7 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 150px;
+    width: 152px;
     padding: 20px 0 0 5px;
     box-sizing: border-box;
   }
@@ -41,5 +41,20 @@
 
   .copyright__link {
     margin: -13px 0 0 -15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 180px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .copyright__link {
+    margin: -10px 0 0 -13px;
   }
 }
