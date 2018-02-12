@@ -128,7 +128,7 @@
       <div class="main-header__wrapper">
         <div class="main-header__top">
           <div class="main-header__container">
-            <a class="main-header__logo logo">
+            <a class="main-header__logo logo" href="index.html">
               <svg class="logo__image logo__image--mobile" fill="#ffffff" width="75" height="23"><use xlink:href="#logo-head"></use></svg>
               <svg class="logo__image logo__image--tablet" fill="#ffffff" width="150" height="41"><use xlink:href="#logo-head-tablet"></use></svg>
               <svg class="logo__image logo__image--desktop" fill="#ffffff" width="150" height="41"><use xlink:href="#logo-head-desktop"></use></svg>
@@ -142,10 +142,10 @@
         <nav class="main-header__navigation main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="photos.html">Фотографии</a>
+              <a class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -176,10 +176,10 @@
             <b class="panorama__author-name">Анна</b>
             <span class="panorama__post-time">(5 минут назад)</span>
             <p class="panorama__post-text">
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию с перископе, задавайте свои вопросы!
             </p>
             <div class="panorama__likes-quantity">
-              <button class="panorama__heart" type="button">Сердечко</button>
+              <button class="panorama__heart" type="button" aria-label="Поставить лайк"></button>
               <span class="panorama__like">Нравится: 215</span>
             </div>
           </div>
@@ -197,7 +197,7 @@
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <div class="photos-story__likes-quantity">
-                <button class="photos-story__heart" type="button">Сердечко</button>
+                <button class="photos-story__heart" type="button" aria-label="Поставить лайк"></button>
                 <span class="photos-story__like">Нравится: 356</span>
               </div>
             </div>
@@ -214,7 +214,7 @@
                 Соседи будут рады!
               </p>
               <div class="photos-story__likes-quantity">
-                <button class="photos-story__heart" type="button">Сердечко</button>
+                <button class="photos-story__heart" type="button" aria-label="Поставить лайк"></button>
                 <span class="photos-story__like">Нравится: 666</span>
               </div>
             </div>
@@ -231,7 +231,7 @@
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <div class="photos-story__likes-quantity">
-                <button class="photos-story__heart" type="button">Сердечко</button>
+                <button class="photos-story__heart" type="button" aria-label="Поставить лайк"></button>
                 <span class="photos-story__like">Нравится: 215</span>
               </div>
             </div>
@@ -248,7 +248,7 @@
                 Самая кубанская в мире!
               </p>
               <div class="photos-story__likes-quantity">
-                <button class="photos-story__heart" type="button">Сердечко</button>
+                <button class="photos-story__heart" type="button" aria-label="Поставить лайк"></button>
                 <span class="photos-story__like">Нравится: 4</span>
               </div>
             </div>
@@ -265,7 +265,7 @@
                 Где снег-то?
               </p>
               <div class="photos-story__likes-quantity">
-                <button class="photos-story__heart" type="button">Сердечко</button>
+                <button class="photos-story__heart" type="button" aria-label="Поставить лайк"></button>
                 <span class="photos-story__like">Нравится: 150</span>
               </div>
             </div>
@@ -282,7 +282,7 @@
                 Всем GM и взаимные лайки!
               </p>
               <div class="photos-story__likes-quantity">
-                <button class="photos-story__heart" type="button">Сердечко</button>
+                <button class="photos-story__heart" type="button" aria-label="Поставить лайк"></button>
                 <span class="photos-story__like">Нравится: 2560</span>
               </div>
             </div>
@@ -305,21 +305,37 @@
             <fieldset class="put-photo__correct">
               <ul class="put-photo__effects">
                 <li class="put-photo__effect put-photo__effect--crop">
-                  <button class="put-photo__tool" type="button">Обрезка</button>
+                  <button class="put-photo__tool put-photo__tool--active put-photo__tool--crop" type="button" aria-label="Инструмент обрезка">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="#f2f2f2" d="M0,0h48v48H0V0z"/>
+                      <path fill="currentColor" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                    </svg>
+                  </button>
                   <div class="put-photo__tune-up">
                     <div class="regulator__scale">Шкала</div>
                     <div class="regulator__toggle">Бегунок</div>
                   </div>
                 </li>
                 <li class="put-photo__effect put-photo__effect--fill">
-                  <button class="put-photo__tool" type="button">Заливка</button>
+                  <button class="put-photo__tool put-photo__tool--fill" type="button" aria-label="Инструмент заливка">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                      <path fill="none" d="M0,0h48v48H0V0z"/>
+                      <path fill="currentColor" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                      <rect fill="currentColor" y="40" width="48" height="3"/>
+                    </svg>
+                  </button>
                   <div class="put-photo__tune-up">
                     <div class="regulator__scale">Шкала</div>
                     <div class="regulator__toggle">Бегунок</div>
                   </div>
                 </li>
                 <li class="put-photo__effect put-photo__effect--contrast">
-                  <button class="put-photo__tool" type="button">Контраст</button>
+                  <button class="put-photo__tool put-photo__tool--contrast" type="button" aria-label="Инструмент контраст">
+                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                      <path fill="currentColor" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                      <path fill="currentColor" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                    </svg>
+                  </button>
                   <div class="put-photo__tune-up">
                     <div class="regulator__scale">Шкала</div>
                     <div class="regulator__toggle">Бегунок</div>
@@ -345,7 +361,7 @@
     </main>
     <footer class="main-footer">
       <section class="main-footer__logo">
-        <a class="main-footer__logo-link">
+        <a class="main-footer__logo-link" href="index.html">
           <svg class="main-footer__image main-footer__image--tablet" width="150" height="41"><use xlink:href="#logo-footer-tablet"></use></svg>
           <svg class="main-footer__image main-footer__image--desktop" width="150" height="41"><use xlink:href="#logo-footer-desktop"></use></svg>
         </a>

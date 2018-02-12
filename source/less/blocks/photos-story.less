@@ -8,25 +8,64 @@
 .photos-story__post {
   width: 280px;
   margin-bottom: 20px;
-  padding: 25px 18px;
+  padding: 17px 18px 20px;
   font-size: 14px;
   text-align: left;
   background-color: @bg-light-grey;
   box-sizing: border-box;
 }
 
+.photos-story:nth-child(4) .photos-story__post {
+  padding-top: 18px;
+}
+
+.photos-story:nth-child(5) .photos-story__post {
+  padding-top: 19px;
+}
+
+.photos-story:nth-child(5) .photos-story__author-name {
+  font-size: 14px;
+}
+
+.photos-story:nth-child(6) .photos-story__author-name {
+  font-size: 14px;
+}
+
+
 .photos-story__author-name {
+  font-size: 13px;
   font-weight: 700;
+  letter-spacing: 1px;
+
+  &:nth-child(5) {
+    font-size: 14px;
+  }
 }
 
 .photos-story__post-time {
   font-size: 12px;
   font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photos-story__post-text {
+  margin: 0 0 9px 0;
+}
+
+.photos-story__heart {
+  position: relative;
+  top: 5px;
+  width: 16px;
+  height: 15px;
+  margin-right: 11px;
+  border: none;
+  background: url("../img/icon-heart.svg") no-repeat 0 0;
 }
 
 .photos-story__like {
   font-size: 12px;
   color: @font-color-pink;
+  text-transform: uppercase;
 }
 
 

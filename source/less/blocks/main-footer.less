@@ -39,8 +39,6 @@
 
 @media (min-width: @tablet-width) {
   .main-footer {
-    display: flex;
-    justify-content: space-between;
     width: @tablet-width;
     padding: 0 20px;
     box-sizing: border-box;
@@ -48,6 +46,12 @@
     &--main-sheet {
       display: flex;
     }
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
   }
 
   .main-footer__image {
@@ -60,7 +64,14 @@
 
 @media (min-width: @desktop-width) {
   .main-footer {
+    width: 1200px;
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
     width: @desktop-width;
+    margin: @centerer-margin;
     padding: 0 10px;
   }
 
