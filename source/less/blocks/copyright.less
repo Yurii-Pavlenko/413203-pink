@@ -1,4 +1,5 @@
 .copyright {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 130px;
@@ -6,7 +7,6 @@
 }
 
 .copyright__text {
-  padding-left: 95px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -14,7 +14,10 @@
 }
 
 .copyright__link {
-  display: block;
+  position: absolute;
+  top: -11px;
+  left: 89px;
+/*  display: block;*/
   width: 55px;
   height: 55px;
   color: @font-color-pink;

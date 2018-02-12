@@ -8,6 +8,7 @@
 
 .put-photo__picture {
   .reset-fieldset();
+  margin-bottom: 40px;
 }
 
 .put-photo__correct {
@@ -17,13 +18,21 @@
 .put-photo__effects {
   .reset-list();
   display: flex;
-  justify-content: space-between;
-  width: 200px;
+  justify-content: left;
+  width: 233px;
   min-height: 45px;
-  margin: @centerer-margin;
+  margin: @centerer-margin 25px;
 }
 
 .put-photo__effect {
+  width: 70px;
+  &--crop {
+    margin-right: 10px;
+  }
+
+  &--fill {
+    margin-right: 10px;
+  }
   &--contrast {
     padding-top: 6px;
   }
@@ -41,6 +50,36 @@
 
 .put-photo__tune-up {
   display: none;
+}
+
+.put-photo__link {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin: @centerer-margin;
+}
+
+.put-photo__button {
+  width: 280px;
+  height: 55px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @putphoto-font-color;
+  background: none;
+  border: 3px solid @effect-border-color;
+  border-radius: 27px;
+
+  &--post {
+    color: @font-color-pink;
+    border-color: @bg-color-pink;
+  }
+}
+
+.put-photo__btn-wrapper {
+  &--submit {
+    margin-bottom: 13px;
+  }
 }
 
 
