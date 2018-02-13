@@ -142,10 +142,10 @@
         <nav class="main-header__navigation main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Фотографии</a>
+              <a class="main-nav__link main-nav__link--active">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -170,7 +170,7 @@
           <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
           <a class="panorama__link" href="#">
             <span class="panorama__day">Панорама дня</span>
-            <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от Анны">
+            <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Фото от Анны">
           </a>
           <div class="panorama__post">
             <b class="panorama__author-name">Анна</b>
@@ -188,7 +188,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Левон</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от Левона">
+              <img class="photos-story__author-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" width="280" height="180" alt="Фото от Левона">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Левон</b>
@@ -205,7 +205,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Антон</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от Антона">
+              <img class="photos-story__author-image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" width="280" height="180" alt="Фото от Антона">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Антон</b>
@@ -222,7 +222,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Борис</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от Бориса">
+              <img class="photos-story__author-image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" width="280" height="180" alt="Фото от Бориса">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Борис</b>
@@ -239,7 +239,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Сергей</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от Сергея">
+              <img class="photos-story__author-image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" width="280" height="180" alt="Фото от Сергея">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Сергей</b>
@@ -256,7 +256,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Максим</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от Максима">
+              <img class="photos-story__author-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" width="280" height="180" alt="Фото от Максима">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Максим</b>
@@ -273,7 +273,7 @@
           <article class="photos-story">
             <h3 class="visually-hidden">Сообщение от пользователя Надежда</h3>
             <a class="photos-story__author-picture" href="#">
-              <img class="photos-story__author-image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от Надежды">
+              <img class="photos-story__author-image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" width="280" height="180" alt="Фото от Надежды">
             </a>
             <div class="photos-story__post">
               <b class="photos-story__author-name">Надежда</b>
@@ -298,7 +298,7 @@
         <form class="put-photo__form">
           <fieldset class="put-photo__picture">
             <a class="put-photo__link" href="#">
-              <img class="put-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="picture">
+              <img class="put-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" width="280" height="374" alt="picture">
             </a>
           </fieldset>
           <div class="put-photo__container">
@@ -311,9 +311,9 @@
                       <path fill="currentColor" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                     </svg>
                   </button>
-                  <div class="put-photo__tune-up">
-                    <div class="regulator__scale"></div>
-                    <div class="regulator__toggle"></div>
+                  <div class="put-photo__tune-up put-photo__tune-up--active">
+                    <div class="put-photo__scale"></div>
+                    <div class="put-photo__toggle"></div>
                   </div>
                 </li>
                 <li class="put-photo__effect put-photo__effect--fill">
@@ -325,8 +325,8 @@
                     </svg>
                   </button>
                   <div class="put-photo__tune-up">
-                    <div class="regulator__scale"></div>
-                    <div class="regulator__toggle"></div>
+                    <div class="put-photo__scale"></div>
+                    <div class="put-photo__toggle"></div>
                   </div>
                 </li>
                 <li class="put-photo__effect put-photo__effect--contrast">
@@ -337,15 +337,15 @@
                     </svg>
                   </button>
                   <div class="put-photo__tune-up">
-                    <div class="regulator__scale"></div>
-                    <div class="regulator__toggle"></div>
+                    <div class="put-photo__scale"></div>
+                    <div class="put-photo__toggle"></div>
                   </div>
                 </li>
               </ul>
-              <div class="regulator">
+             <!-- <div class="regulator">
                 <div class="regulator__scale"></div>
                 <div class="regulator__toggle"></div>
-              </div>
+              </div>-->
             </fieldset>
             <div class="put-photo__wrapper">
               <div class="put-photo__btn-wrapper  put-photo__btn-wrapper--submit">
