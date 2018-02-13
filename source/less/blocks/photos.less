@@ -32,13 +32,15 @@
 @media (min-width: @tablet-width) {
   .photos {
     width: @tablet-width;
-    margin: -325px 0 75px 0;
+    margin: -325px 0 70px 0;
     background-color: @bg-white;
   }
 
   .photos__header {
-    margin: 0 0 0 76px;
+    width: @tablet-width;
+    margin: @centerer-margin 77px;
     padding-top: 92px;
+    box-sizing: border-box;
   }
 
   .photos__text {
@@ -51,7 +53,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: @tablet-width;
-    margin: @centerer-margin 50px;
+    margin: @centerer-margin 46px;
   }
 }
 
@@ -68,5 +70,10 @@
 
   .photos__wrapper {
     width: @desktop-width;
+  }
+
+  .panorama__image {
+    width: 1200px;
+    height: 506px;
   }
 }
