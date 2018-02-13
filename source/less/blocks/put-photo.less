@@ -17,7 +17,7 @@
   border-bottom: 1px solid @effect-border-color;
 }
 
-.put-photo__effects {
+.put-photo__list {
   .reset-list();
   display: flex;
   justify-content: left;
@@ -47,6 +47,13 @@
   background: none;
   border: none;
   color: @instrument-color;
+
+  &--fill:hover,
+  &--fill:focus,
+  &--contrast:hover,
+  &--contrast:focus {
+    color: @editor-hover-color;
+  }
 
   &--active {
     color: @font-color-pink;
@@ -107,6 +114,26 @@
     color: @font-color-pink;
     border-color: @bg-color-pink;
   }
+
+  &--post:hover,
+  &--post:focus {
+    background-color: @bg-color-pink;
+    color: @font-color-secondary;
+  }
+
+  &--post:active {
+    color: #e08195;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    color: #cdd0d3;
+  }
 }
 
 .put-photo__btn-wrapper {
@@ -119,8 +146,9 @@
 @media (min-width: @tablet-width) {
   .put-photo {
     width: @tablet-width;
-    padding: 55px 20px;
+    padding: 55px 20px 15px;
     margin-bottom: 36px;
+    box-sizing: border-box;
   }
 
   .put-photo__form {
@@ -132,25 +160,116 @@
   }
 
   .put-photo__picture {
-    margin-right: 45px;
+    margin-right: 42px;
   }
 
-  .put-photo__effects {
-    display: block;
-    margin-bottom: 68px;
+  .put-photo__link {
+    width: 300px;
+    height: 400px;
   }
 
-  .put-photo__tune-up {
+  .put-photo__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .put-photo__correct {
+    border: none;
+  }
+
+  .put-photo__list {
     display: block;
+    width: 270px;
+    margin: 0 0 15px 0;
+    padding-top: 9px;
   }
 
   .put-photo__effect {
     display: flex;
-    justify-content: space-between;
     width: 275px;
-    height: 71px;
+    height: 47px;
+    margin-right: 10px;
+    margin-bottom: 28px;
     box-sizing: border-box;
     border-bottom: 1px solid @effect-border-color;
+
+    &--crop {
+      margin-right: 10px;
+    }
+
+    &--fill {
+      margin-right: 10px;
+      margin-bottom: 17px;
+    }
+
+    &--contrast {
+      height: 52px;
+      margin-left: 6px;
+    }
+  }
+
+  .put-photo__button {
+    width: 260px;
+    height: 55px;
+    margin-left: 0;
+    letter-spacing: 1px;
+
+    &--post {
+      margin-bottom: 13px;
+    }
+  }
+
+  .put-photo__tool {
+    height: 25px;
+    margin-bottom: 0;
+    color: @font-color-pink;
+  }
+
+  .put-photo__img {
+    width: 23px;
+    height: 23px;
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .put-photo__tune-up {
+    display: block;
+    position: relative;
+    padding-top: 12px;
+
+    &--fill {
+      padding-top: 9px;
+    }
+
+    &--contrast {
+      padding-top: 9px;
+    }
+  }
+
+  .put-photo__scale {
+    width: 202px;
+    margin-left: 24px;
+  }
+
+  .put-photo__toggle {
+    top: 5px;
+
+    &--crop {
+      left: 169px;
+    }
+
+    &--fill {
+      top: 3px;
+      left: 48px;
+    }
+
+    &--contrast {
+      top: 3px;
+      left: 120px;
+    }
   }
 }
 

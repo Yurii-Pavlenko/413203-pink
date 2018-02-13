@@ -335,42 +335,42 @@
           </fieldset>
           <div class="put-photo__container">
             <fieldset class="put-photo__correct">
-              <ul class="put-photo__effects">
+              <ul class="put-photo__list">
                 <li class="put-photo__effect put-photo__effect--crop">
                   <button class="put-photo__tool put-photo__tool--active put-photo__tool--crop" type="button" aria-label="Инструмент обрезка">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <svg class="put-photo__img put-photo--crop" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="#f2f2f2" d="M0,0h48v48H0V0z"/>
                       <path fill="currentColor" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                     </svg>
                   </button>
                   <div class="put-photo__tune-up put-photo__tune-up--active">
-                    <div class="put-photo__scale"></div>
-                    <div class="put-photo__toggle"></div>
+                    <div class="put-photo__scale put-photo__scale--crop"></div>
+                    <div class="put-photo__toggle put-photo__toggle--crop"></div>
                   </div>
                 </li>
                 <li class="put-photo__effect put-photo__effect--fill">
                   <button class="put-photo__tool put-photo__tool--fill" type="button" aria-label="Инструмент заливка">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <svg class="put-photo__img put-photo--fill" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                       <path fill="none" d="M0,0h48v48H0V0z"/>
                       <path fill="currentColor" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                       <rect fill="currentColor" y="40" width="48" height="3"/>
                     </svg>
                   </button>
-                  <div class="put-photo__tune-up">
-                    <div class="put-photo__scale"></div>
-                    <div class="put-photo__toggle"></div>
+                  <div class="put-photo__tune-up put-photo__tune-up--fill">
+                    <div class="put-photo__scale put-photo__scale--fill"></div>
+                    <div class="put-photo__toggle put-photo__toggle--fill"></div>
                   </div>
                 </li>
                 <li class="put-photo__effect put-photo__effect--contrast">
                   <button class="put-photo__tool put-photo__tool--contrast" type="button" aria-label="Инструмент контраст">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                    <svg class="put-photo__img put-photo__img--contrast" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                       <path fill="currentColor" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                       <path fill="currentColor" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                     </svg>
                   </button>
-                  <div class="put-photo__tune-up">
-                    <div class="put-photo__scale"></div>
-                    <div class="put-photo__toggle"></div>
+                  <div class="put-photo__tune-up put-photo__tune-up--contrast">
+                    <div class="put-photo__scale put-photo__scale--contrast"></div>
+                    <div class="put-photo__toggle put-photo__toggle--contrast"></div>
                   </div>
                 </li>
               </ul>
@@ -388,38 +388,40 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="main-footer__logo">
-        <a class="main-footer__logo-link" href="index.html">
-          <svg class="main-footer__image main-footer__image--tablet" width="150" height="41"><use xlink:href="#logo-footer-tablet"></use></svg>
-          <svg class="main-footer__image main-footer__image--desktop" width="150" height="41"><use xlink:href="#logo-footer-desktop"></use></svg>
-        </a>
-      </section>
-      <section class="main-footer__social social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#" aria-label="Мы в твиттере">
-              <svg class="social__image social__image--twitter" width="18" height="16"><use xlink:href="#twitter"></use></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#" aria-label="Мы в фейсбуке">
-              <svg class="social__image social__image--facebook" width="7" height="19"><use xlink:href="#facebook"></use></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#" aria-label="Мы на ютубе">
-              <svg class="social__image social__image--youtube" width="15" height="14"><use xlink:href="#youtube"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="main-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
-          <svg class="copyright__image" width="40" height="45"><use xlink:href="#academy"></use></svg>
-        </a>
-      </section>
+      <div class="main-footer__wrapper">
+        <section class="main-footer__logo">
+          <a class="main-footer__logo-link" href="index.html">
+            <svg class="main-footer__image main-footer__image--tablet" width="150" height="41"><use xlink:href="#logo-footer-tablet"></use></svg>
+            <svg class="main-footer__image main-footer__image--desktop" width="150" height="41"><use xlink:href="#logo-footer-desktop"></use></svg>
+          </a>
+        </section>
+        <section class="main-footer__social social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#" aria-label="Мы в твиттере">
+                <svg class="social__image social__image--twitter" width="18" height="16"><use xlink:href="#twitter"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#" aria-label="Мы в фейсбуке">
+                <svg class="social__image social__image--facebook" width="7" height="19"><use xlink:href="#facebook"></use></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#" aria-label="Мы на ютубе">
+                <svg class="social__image social__image--youtube" width="15" height="14"><use xlink:href="#youtube"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="main-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
+            <svg class="copyright__image" width="40" height="45"><use xlink:href="#academy"></use></svg>
+          </a>
+        </section>
+      </div>
     </footer>
     <script src="./js/script.js"></script>
   </body>
