@@ -170,7 +170,11 @@
           <h3 class="visually-hidden">Сообщение от пользователя Анна</h3>
           <a class="panorama__link" href="#">
             <span class="panorama__day">Панорама дня</span>
-            <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Фото от Анны">
+            <picture>
+              <source media="(min-width: @desktop-width)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+              <source media="(min-width: @tablet-width" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+              <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Фото от Анны">
+            </picture>
           </a>
           <div class="panorama__post">
             <b class="panorama__author-name">Анна</b>
