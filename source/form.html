@@ -157,7 +157,7 @@
         </nav>
       </div>
     </header>
-    <main class="content">
+    <main class="content content--form">
       <section class="bg-photo bg-photo--inner">
         <h1 class="bg-photo__title bg-photo__title--competition">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
@@ -243,15 +243,15 @@
             <h2 class="tenderer-form__title tenderer-form__title--app">С каким приложением путешествовали?</h2>
             <ul class="tenderer-form__register">
               <li class="tenderer-form__piece tenderer-form__piece--app">
-                <input class="visually-hidden" type="radio" id="ios" tabindex="0" checked>
+                <input class="visually-hidden tenderer-form__input-app" type="radio" id="ios" tabindex="0" checked>
                 <label class="tenderer-form__application" for="ios">Pink для iOS</label>
               </li>
               <li class="tenderer-form__piece tenderer-form__piece--app">
-                <input class="visually-hidden" type="radio" id="android" tabindex="0">
+                <input class="visually-hidden tenderer-form__input-app" type="radio" id="android" tabindex="0">
                 <label class="tenderer-form__application" for="android">Pink на Android</label>
               </li>
               <li class="tenderer-form__piece tenderer-form__piece--app">
-                <input class="visually-hidden" type="radio" id="win-phone" tabindex="0">
+                <input class="visually-hidden tenderer-form__input-app" type="radio" id="win-phone" tabindex="0">
                 <label class="tenderer-form__application" for="win-phone">Windows Phone</label>
               </li>
             </ul>
@@ -264,7 +264,7 @@
         </form>
         <footer class="for-tenderer__footer">
           <button class="for-tenderer__send-form btn" form="tenderer-form" type="submit">Отправить форму</button>
-          <p class="for-tenderer__text for-tenderer__text--uppercase">* - обязательные<span class="for-tenderer__hidden"> для заполнения</span> поля</p>
+          <p class="for-tenderer__text for-tenderer__text--uppercase"><span class="for-tenderer__asterisk">*</span>  — обязательные<span class="for-tenderer__hidden"> для заполнения</span> поля</p>
         </footer>
       </section>
     </main>
