@@ -66,7 +66,8 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 620px;
+    width: 618px;
+    padding-top: 12px;
   }
 
   .main-nav__list {
@@ -78,16 +79,23 @@
 
   .main-nav__item {
     width: auto;
-    padding-top: 31px;
+    padding-top: 30px;
     background: none;
     border: none;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-right: 3px;
+    }
   }
 
   .main-nav__link {
     display: block;
-    padding-top: 12px;
+    padding-top: 0;
     font-size: 18px;
     line-height: 18px;
+    font-weight: 400;
     text-transform: none;
+    letter-spacing: 0;
   }
 }

@@ -277,7 +277,8 @@
 @media (min-width: @desktop-width) {
   .put-photo {
     width: 940px;
-    padding: 55px 80px;
+    margin-bottom: 96px;
+    padding: 55px 60px 20px 80px;
   }
 
   .put-photo__picture {
@@ -288,5 +289,66 @@
     display: flex;
     justify-content: space-between;
     width: 410px;
+  }
+
+  .put-photo__img {
+    width: 48px;
+    height: 48px;
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .put-photo__button {
+    width: 183px;
+    height: 55px;
+    margin-left: 0;
+    letter-spacing: 1px;
+
+    &--post {
+      margin-bottom: 13px;
+    }
+  }
+
+  .put-photo__tool {
+    height: 25px;
+    margin-top: -11px;
+    margin-bottom: 0;
+    margin-left: -4px;
+    color: @font-color-pink;
+
+    &--contrast {
+      padding-top: 6px;
+      margin-right: 9px;
+    }
+  }
+
+  .put-photo__scale {
+    width: 290px;
+    margin-left: 39px;
+  }
+
+  .put-photo__toggle {
+    top: 5px;
+
+    &--crop {
+      left: 110px;
+    }
+
+    &--fill {
+      top: 3px;
+      left: 286px;
+    }
+
+    &--contrast {
+      top: 3px;
+      left: 199px;
+    }
+  }
+
+  .put-photo__correct {
+    margin-bottom: 120px;
   }
 }

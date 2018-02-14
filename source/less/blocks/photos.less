@@ -60,8 +60,16 @@
 
 @media (min-width: @desktop-width) {
   .photos {
+    position: relative;
+    z-index: 10;
     width: 1200px;
-    margin: @centerer-margin 75px;
+    margin: -245px auto 67px;
+  }
+
+  .photos__header {
+    width: @desktop-width;
+    margin: @centerer-margin 88px;
+    padding-left: 40px;
   }
 
   .photos__text {
@@ -70,6 +78,8 @@
 
   .photos__wrapper {
     width: @desktop-width;
+    padding: 0 10px;
+    margin-bottom: 39px;
   }
 
   .panorama__image {
