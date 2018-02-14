@@ -179,8 +179,8 @@
                   <input class="tenderer-form__input tenderer-form__input--surname" type="text" id="surname" placeholder="Укажите фамилию*" required>
                 </div>
               </li>
-              <li class="tenderer-form__item">
-                <label class="tenderer-form__label" for="name">Имя:</label>
+              <li class="tenderer-form__item tenderer-form__item--name">
+                <label class="tenderer-form__label tenderer-form__label--name" for="name">Имя:</label>
                 <div>
                   <input class="tenderer-form__input tenderer-form__input--name" type="text" id="name" placeholder="Введите ваше имя*" required>
                 </div>
@@ -227,21 +227,21 @@
             <ul class="tenderer-form__list tenderer-form__list--contacts">
               <li class="tenderer-form__item tenderer-form__item--contacts">
                 <label class="tenderer-form__label tenderer-form__label--contacts" for="phone">Номер телефона</label>
-                <div>
-                  <input class="tenderer-form__input" type="tel" id="phone" placeholder="Номер, пожалуйста">
+                <div class="tenderer-form__wrapper tenderer-form__wrapper--phone">
+                  <input class="tenderer-form__input tenderer-form__input--phone-number" type="tel" id="phone" placeholder="Номер, пожалуйста">
                 </div>
               </li>
               <li class="tenderer-form__item tenderer-form__item--contacts">
-                <label class="tenderer-form__label tenderer-form__label--contacts">Адрес почты</label>
-                <div>
-                  <input class="tenderer-form__input" type="tel" name="phone" placeholder="Введите почту*" required>
+                <label class="tenderer-form__label tenderer-form__label--contacts" for="email">Адрес почты</label>
+                <div class="tenderer-form__wrapper tenderer-form__wrapper--email">
+                  <input class="tenderer-form__input tenderer-form__input--email" type="email" name="email" id="email" placeholder="Введите почту*" required>
                 </div>
               </li>
             </ul>
           </div>
           <div class="tenderer-form__app-type">
             <h2 class="tenderer-form__title tenderer-form__title--app">С каким приложением путешествовали?</h2>
-            <ul class="tenderer-form__register">
+            <ul class="tenderer-form__register tenderer-form__register--applications">
               <li class="tenderer-form__piece tenderer-form__piece--app">
                 <input class="visually-hidden tenderer-form__input-app" type="radio" id="ios" tabindex="0" checked>
                 <label class="tenderer-form__application" for="ios">Pink для iOS</label>
