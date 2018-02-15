@@ -48,6 +48,8 @@
     width: @tablet-width;
     margin-top: -290px;
     margin-bottom: 49px;
+    box-sizing: border-box;
+    background-color: @bg-white;
   }
 
   .for-tenderer__header {
@@ -83,9 +85,16 @@
 
 @media (min-width: @desktop-width) {
   .for-tenderer {
-    width: @desktop-width;
-    margin-bottom: 70px;
-    padding: 0 30px;
+    position: relative;
+    width: 1200px;
+    margin-top: -245px;
+    margin-bottom: 34px;
+    padding: 0;
+  }
+
+  .for-tenderer__header {
+    margin-bottom: 83px;
+    padding: 93px 110px 0;
   }
 
   .for-tenderer__text {
@@ -97,6 +106,7 @@
 
     &--uppercase {
       padding: 0;
+      padding-top: 18px;
       font-size: 14px;
     }
   }

@@ -358,31 +358,35 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: @desktop-width;
+    margin: @centerer-margin;
     padding: 0 10px;
   }
 
   .tenderer-form__name {
-    width: 450px;
-    margin-right: 40px;
+    width: 436px;
+    margin-right: 66px;
     border: 2px solid @white;
   }
 
   .tenderer-form__app-type {
-    width: 450px;
+    width: 430px;
   }
 
   .tenderer-form__contacts {
     width: 940px;
-    margin: @centerer-margin 60px;
+    height: 157px;
+    margin: @centerer-margin 64px;
   }
 
   .tenderer-form__achievements {
     width: 940px;
-    margin: @centerer-margin 60px;
+    margin: @centerer-margin 65px;
+    padding-bottom: 27px;
   }
 
   .tenderer-form__share-impress {
     width: 940px;
+    height: 167px;
     margin: @centerer-margin 66px;
   }
 
@@ -396,22 +400,47 @@
 
   .tenderer-form__tale {
     width: 820px;
+    height: 125px;
   }
 
   .tenderer-form__list {
     &--contacts {
       display: flex;
       justify-content: space-between;
-      width: 820px;
+      width: 815px;
       margin: @centerer-margin;
+      margin-top: -17px;
+      padding-left: 3px;
     }
   }
 
   .tenderer-form__register {
+    &--applications {
+      margin-top: -19px;
+      padding-left: 45px;
+    }
+
     &--achievements {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      padding-left: 30px;
+    }
+  }
+
+  .tenderer-form__wrapper {
+    &--phone::after {
+      right: 0;
+    }
+
+    &--email::after {
+      right: 0;
+    }
+  }
+
+  .tenderer-form__item {
+    &--contacts {
+      width: 372px;
     }
   }
 
