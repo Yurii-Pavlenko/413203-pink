@@ -1,6 +1,5 @@
 .contacts {
   width: @mobile-width;
-  min-height: 565px;
   margin: @centerer-margin 40px;
   text-align: center;
 }
@@ -10,6 +9,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: -1px;
 }
 
 .contacts__item {
@@ -26,6 +26,7 @@
   line-height: 30px;
   font-weight: 700;
   color: @font-color-base;
+  letter-spacing: 1px;
 }
 
 .contacts__facts {
@@ -46,27 +47,11 @@
   }
 }
 
-.contacts__footer {
-  position: relative;
-  width: @mobile-width;
-  min-height: 220px;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat center bottom;
-}
-
-.contacts__marker {
-  position: absolute;
-  top: 115px;
-  left: 143px;
-  width: 45px;
-  height: 45px;
-  background: url("../img/icon-map-marker.svg") no-repeat 0 0;
-}
-
 
 @media (min-width: @tablet-width) {
   .contacts {
     width: @tablet-width;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     box-sizing: border-box;
   }
 
@@ -95,7 +80,7 @@
 
     &--address {
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
   }
 
@@ -123,50 +108,49 @@
       padding-left: 3px;
     }
   }
-
-  .contacts__footer {
-    width: @tablet-width;
-    min-height: 375px;
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat -1480px -305px, url("../img/bg-map-mobile@1x.png") no-repeat 0 bottom;
-    background-size: cover;
-  }
-
-  .contacts__marker {
-    top: 187px;
-    left: 312px;
-  }
 }
 
 
 @media (min-width: @desktop-width) {
   .contacts {
     width: @desktop-width;
+    margin-bottom: 0;
+    padding: 0 10px;
   }
 
   .contacts__wrapper {
     width: 940px;
+    padding-left: 50px;
+    justify-content: left;
   }
 
   .contacts__header {
-    padding: 20px 245px;
+    padding: 17px 215px 20px 250px;
   }
 
   .contacts__title {
+    margin-bottom: 33px;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
   }
 
   .contacts__item {
-    width: 313px;
+    width: 279px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      margin-right: 14px;
+    }
   }
 
-  .contacts__footer {
-    width: @desktop-width;
-    min-height: 500px;
-  }
-
-  .contacts__marker {
-    top: 220px;
-    left: 500px;
+  .contacts__call {
+    margin-bottom: 22px;
   }
 }

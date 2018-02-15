@@ -1,11 +1,12 @@
 .for-tenderer {
   width: @mobile-width;
-  margin: @centerer-margin 60px;
+  margin: -91px auto 16px;
   text-align: center;
 }
 
 .for-tenderer__header {
-  padding: 52px 0;
+  margin-bottom: 35px;
+  padding: 45px 8px 0;
   background-color: @bg-white;
   font-size: 14px;
   line-height: 30px;
@@ -15,6 +16,7 @@
 
 .for-tenderer__text {
   margin: 0;
+  padding: 0 12px;
   font-size: 14px;
   line-height: 30px;
   color: @font-color-base;
@@ -32,14 +34,28 @@
   display: none;
 }
 
+.for-tenderer__send-form {
+  margin-bottom: 36px;
+}
+
+.for-tenderer__asterisk {
+  color: @font-color-pink;
+}
+
 
 @media (min-width: @tablet-width) {
   .for-tenderer {
     width: @tablet-width;
+    margin-top: -290px;
+    margin-bottom: 49px;
+    box-sizing: border-box;
+    background-color: @bg-white;
   }
 
   .for-tenderer__header {
     margin: 0;
+    margin-bottom: -18px;
+    padding: 91px 11px;
   }
 
   .for-tenderer__text {
@@ -48,6 +64,7 @@
 
     &--uppercase {
       padding: 0;
+      padding-top: 18px;
       font-size: 14px;
     }
 
@@ -68,9 +85,16 @@
 
 @media (min-width: @desktop-width) {
   .for-tenderer {
-    width: @desktop-width;
-    margin-bottom: 70px;
-    padding: 0 30px;
+    position: relative;
+    width: 1200px;
+    margin-top: -245px;
+    margin-bottom: 34px;
+    padding: 0;
+  }
+
+  .for-tenderer__header {
+    margin-bottom: 83px;
+    padding: 93px 110px 0;
   }
 
   .for-tenderer__text {
@@ -82,6 +106,7 @@
 
     &--uppercase {
       padding: 0;
+      padding-top: 18px;
       font-size: 14px;
     }
   }

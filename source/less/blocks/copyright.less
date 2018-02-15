@@ -1,10 +1,12 @@
 .copyright {
+  position: relative;
   display: flex;
-  text-align: left;
+  justify-content: space-between;
+  width: 130px;
+  margin: @centerer-margin;
 }
 
 .copyright__text {
-  padding-left: 95px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -12,7 +14,9 @@
 }
 
 .copyright__link {
-  display: block;
+  position: absolute;
+  top: -11px;
+  left: 89px;
   width: 55px;
   height: 55px;
   color: @font-color-pink;
@@ -30,8 +34,8 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 150px;
-    padding: 20px 0 0 5px;
+    width: 152px;
+    margin: 0;
     box-sizing: border-box;
   }
 
@@ -40,6 +44,22 @@
   }
 
   .copyright__link {
-    margin: -13px 0 0 -15px;
+    top: 9px;
+    left: 112px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 180px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .copyright__link {
+    left: 142px;
   }
 }

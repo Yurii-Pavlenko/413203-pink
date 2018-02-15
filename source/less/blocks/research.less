@@ -5,8 +5,7 @@
 
 @media (min-width: @tablet-width) {
   .research {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     width: @tablet-width;
     min-width: 345px;
     margin: @centerer-margin 90px;
@@ -14,18 +13,30 @@
     box-sizing: border-box;
   }
 
+  .research__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .research__image {
     margin-right: 72px;
   }
 
+  .research__timer {
+    &--desktop {
+      display: none;
+    }
+  }
+
   .research__title {
-    width: 160px;
+    width: 200px;
     margin: 0;
     padding: 34px 0 10px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     color: @font-color-black;
+    letter-spacing: 1px;
   }
 
   .research__text {
@@ -36,6 +47,12 @@
     line-height: 24px;
     font-weight: 400;
     color: @font-color-base;
+  }
+
+  .research__break {
+    &--desktop {
+      display: none;
+    }
   }
 
   .research__link {
@@ -49,23 +66,66 @@
 
 @media (min-width: @desktop-width) {
   .research {
-    width: @desktop-width;
+    position: relative;
+    top: -240px;
+    width: 1200px;
+    margin: @centerer-margin;
+    padding: 0 0 67px 0;
     background-color: @bg-light-grey;
   }
 
+  .research__wrapper {
+    width: @desktop-width;
+    margin: @centerer-margin;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .research__image {
+    width: 300px;
+    margin: 0;
+  }
+
+  .research__timer {
+    &--desktop {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
+
   .research__content {
-    width: 570px;
+    width: 573px;
+    padding-top: 59px;
   }
 
   .research__title {
     width: 460px;
+    padding-bottom: 28px;
+    line-height: 30px;
   }
 
   .research__break {
-    display: none;
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
   }
 
   .research__text {
-    width: 400px;
+    width: 530px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

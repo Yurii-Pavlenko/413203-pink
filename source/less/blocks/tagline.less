@@ -11,6 +11,7 @@
   font-weight: 300;
   color: @font-color-base;
   text-align: center;
+  letter-spacing: -1px;
 
   &:nth-child(2) {
     padding-top: 0;
@@ -21,7 +22,9 @@
 @media (min-width: @tablet-width) {
   .tagline {
     width: @tablet-width;
-    padding: 50px 20px 50px;
+    margin-top: -122px;
+    padding: 0 20px 52px;
+    box-sizing: border-box;
   }
 
   .tagline__text {
@@ -38,12 +41,18 @@
 
 @media (min-width: @desktop-width) {
   .tagline {
-    width: @desktop-width;
-    padding: 80px 130px 70px;
+    width: 1200px;
+    margin-bottom: 79px;
+    padding: 65px 130px 0;
+    box-sizing: border-box;
   }
 
   .tagline__text {
+    width: 820px;
+    margin: @centerer-margin;
     font-size: 50px;
+    line-height: 60px;
+    box-sizing: border-box;
 
     &:nth-child(2) {
       padding: 0 150px;

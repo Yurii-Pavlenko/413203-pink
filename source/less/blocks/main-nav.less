@@ -11,7 +11,7 @@
 
 .main-nav__item {
   width: @mobile-width;
-  height: 63px;
+  height: 64px;
   padding: 15px 0;
   background-color: @bg-darkblue;
   border-top: 1px solid @border-lighter-color;
@@ -24,6 +24,7 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: @font-color-secondary;
 
   &:hover,
@@ -65,7 +66,8 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 640px;
+    width: 618px;
+    padding-top: 12px;
   }
 
   .main-nav__list {
@@ -77,17 +79,23 @@
 
   .main-nav__item {
     width: auto;
-    margin-right: 18px;
-    padding-top: 31px;
+    padding-top: 30px;
     background: none;
     border: none;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-right: 3px;
+    }
   }
 
   .main-nav__link {
     display: block;
-    padding-top: 16px;
+    padding-top: 0;
     font-size: 18px;
     line-height: 18px;
+    font-weight: 400;
     text-transform: none;
+    letter-spacing: 0;
   }
 }

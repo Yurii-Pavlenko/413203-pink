@@ -24,6 +24,7 @@
   line-height: 30px;
   font-weight: 700;
   color: @font-color-black;
+  letter-spacing: 1px;
 }
 
 .reviews__personal-data {
@@ -36,6 +37,10 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+}
+
+.reviews__button {
+  display: none;
 }
 
 
@@ -80,10 +85,70 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
+    position: relative;
     width: @desktop-width;
+    margin: -55px auto 40px;
+    padding: 0 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -110px;
+      left: 456px;
+      width: 98px;
+      height: 80px;
+      background: url("../img/icon-quotes.svg") no-repeat 0 0;
+    }
   }
 
   .reviews__text {
-    padding: 145px 130px 0;
+    margin-bottom: 32px;
+    padding: 3px 120px 0 125px;
+    line-height: 31px;
+  }
+
+  .reviews__author-wrapper {
+    padding: 3px 0 0 5px;
+  }
+
+  .reviews__author {
+    margin-bottom: 3px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__personal-data {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__button {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 0;
+    color: @btn-arrow-color;
+
+    &--left {
+      position: absolute;
+      top: 28px;
+      left: 17px;
+    }
+
+    &--right {
+      position: absolute;
+      top: 28px;
+      right: 12px;
+    }
+
+    &:hover,
+    &:focus {
+      color: @point-reviews-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

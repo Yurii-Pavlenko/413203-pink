@@ -161,9 +161,64 @@
 @media (min-width: @desktop-width) {
   .price-table {
     width: 940px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 470px;
+      width: 93px;
+      height: 91px;
+      background: url("../img/bg-hit.svg") no-repeat 0 0;
+      transform: rotate(0deg);
+    }
   }
+
+
+  .price-table__cell-head {
+    height: 98px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
 
   .price-table__cell {
     width: 235px;
+    height: 60px;
+
+    &--visible {
+      padding: 14px 24px;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .price-table__licence-price {
+    margin: 0;
+    padding-top: 3px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .price-table__hit {
+    position: absolute;
+    top: 15px;
+    left: 480px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+  }
+
+  .price-table__condition {
+    &--yes {
+      margin: 7px 0 0 -5px;
+    }
+
+    &--no {
+      margin: 15px 0 0 -7px;
+    }
+
   }
 }
