@@ -11,6 +11,20 @@
   background-color: @bg-btn-color;
   border: none;
   border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #7dbd99;
+  }
+
+  &:disabled {
+    background-color: @table-border-color;
+    color: @font-color-secondary;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -43,6 +43,15 @@
   letter-spacing: 0.5px;
   border: 2px solid @tenderer-input-color;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: @bg-darkblue;
+  }
+
+  &:active {
+    border-color: @bg-color-pink;
+  }
 }
 
 .tenderer-form__achievements {
@@ -113,6 +122,15 @@
   }
 }
 
+.tenderer-form__achievement:hover::before,
+.tenderer-form__achievement:focus::before {
+  border-color: @bg-darkblue;
+}
+
+.tenderer-form__achievement:active::before {
+  border-color: @bg-color-pink;
+}
+
 .tenderer-form__input-get:checked + .tenderer-form__achievement::after {
   content: "";
   position: absolute;
@@ -146,6 +164,15 @@
     border: 2px solid @tenderer-input-color;
     border-radius: 50%;
   }
+}
+
+.tenderer-form__application:hover::before,
+.tenderer-form__application:focus::before {
+  border-color: @bg-darkblue;
+}
+
+.tenderer-form__application:active::before {
+  border-color: @bg-color-pink;
 }
 
 .tenderer-form__tale {
@@ -300,9 +327,6 @@
       order: 1;
       padding: 0 20px;
     }
-
-    &--name {
-    }
   }
 
   .tenderer-form__input {
@@ -449,5 +473,10 @@
       width: 290px;
       box-sizing: border-box;
     }
+  }
+
+  .tenderer-form__input-app:checked + .tenderer-form__application::after {
+    top: 22px;
+    left: 39px;
   }
 }
