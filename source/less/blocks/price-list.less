@@ -73,7 +73,7 @@
 @media (min-width: @desktop-width) {
   .price-list {
     width: 1200px;
-    padding: 128px 0 100px;
+    padding: 0;
 
     &::before {
       content: "";
@@ -88,5 +88,12 @@
     &::after {
       display: none;
     }
+  }
+
+  .price-list__wrapper {
+    width: 960px;
+    margin: @centerer-margin 61px;
+    padding: 145px 10px 95px 10px;
+    box-sizing: border-box;
   }
 }
