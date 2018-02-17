@@ -81,7 +81,6 @@ gulp.task("webp", function () {
     .pipe(gulp.dest("source/img"));
 });
 
-/*
 // Сборка SVG спрайта
 gulp.task("sprite", function () {
   return gulp.src("source/img/icons/!*.svg")
@@ -91,7 +90,6 @@ gulp.task("sprite", function () {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
 });
-*/
 
 //Модификация html
 gulp.task("html", function () {
