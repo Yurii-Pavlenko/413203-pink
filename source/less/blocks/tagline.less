@@ -1,4 +1,5 @@
 .tagline {
+  width: @mobile-width;
   margin: @centerer-margin;
 }
 
@@ -19,6 +20,7 @@
 
 @media (min-width: @tablet-width) {
   .tagline {
+    width: @tablet-width;
     margin-top: -122px;
     padding: 0 20px 52px;
     box-sizing: border-box;
@@ -38,6 +40,7 @@
 
 @media (min-width: @desktop-width) {
   .tagline {
+    width: auto;
     margin-top: 0;
     margin-bottom: 79px;
     padding: 65px 0 0;

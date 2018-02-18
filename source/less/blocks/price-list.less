@@ -1,5 +1,6 @@
 .price-list {
   position: relative;
+  width: @mobile-width;
   margin: @centerer-margin 36px;
   overflow: hidden;
   padding-top: 86px;
@@ -24,7 +25,8 @@
 
 @media (min-width: @tablet-width) {
   .price-list {
-    margin-bottom: 40px;
+    width: @tablet-width;
+    margin: @centerer-margin 40px;
     overflow: visible;
     padding: 70px 20px;
     box-sizing: border-box;
@@ -52,6 +54,7 @@
 
 @media (min-width: @desktop-width) {
   .price-list {
+    width: 100%;
     padding: 0;
     margin-bottom: 65px;
 

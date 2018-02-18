@@ -1,6 +1,6 @@
 .photos {
   width: @mobile-width;
-  margin: -90px auto 44px;
+  margin: -96px auto 44px;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@
 @media (min-width: @tablet-width) {
   .photos {
     width: @tablet-width;
-    margin: -325px 0 70px 0;
+    margin: -333px auto 70px;
     background-color: @bg-white;
   }
 
@@ -60,20 +60,20 @@
 
 @media (min-width: @desktop-width) {
   .photos {
+    width: 100%;
     position: relative;
     z-index: 10;
-    width: 1200px;
     margin: -245px auto 67px;
   }
 
   .photos__header {
-    width: @desktop-width;
+    width: 590px;
     margin: @centerer-margin 88px;
-    padding-left: 40px;
+    padding: 92px 0 0 0;
   }
 
   .photos__text {
-    padding: 0 150px;
+    padding: 0;
   }
 
   .photos__wrapper {
