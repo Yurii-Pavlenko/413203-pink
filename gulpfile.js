@@ -109,6 +109,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
+    "source/js/*.js",
     "source/*.html"
   ], {
     base: "source"
@@ -124,7 +125,5 @@ gulp.task("build", function (done) {
       "images",
       "sprite",
       "html",
-      "sprite",
-      "js",
       done);
 });

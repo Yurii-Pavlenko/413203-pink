@@ -14,15 +14,6 @@
     height: 35px;
     background: url("../img/bg-triangle-white-price.svg") no-repeat -10px 0;
   }
-/*
-  &::after {
-    content: "";
-    position: absolute;
-    top: 790px;
-    width: 100%;
-    height: 41px;
-    background: @bg-light-grey;
-  }*/
 }
 
 .price-list__toggles {
@@ -62,6 +53,7 @@
 @media (min-width: @desktop-width) {
   .price-list {
     padding: 0;
+    margin-bottom: 65px;
 
     &::before {
       content: "";
@@ -71,10 +63,6 @@
       width: 100%;
       height: 95px;
       background: url("../img/bg-triangle-white.svg") no-repeat -1px 0;
-    }
-
-    &::after {
-      display: none;
     }
   }
 
