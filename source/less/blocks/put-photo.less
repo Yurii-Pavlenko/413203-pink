@@ -1,6 +1,6 @@
 .put-photo {
-  width: @mobile-width 41px;
-  margin: @centerer-margin;
+  width: @mobile-width;
+  margin: @centerer-margin 41px;
   padding: 20px 0 41px;
   text-align: center;
   background-color: @bg-light-grey;
@@ -271,10 +271,18 @@
 
 @media (min-width: @desktop-width) {
   .put-photo {
-    width: auto;
+    width: 960px;
     margin-bottom: 96px;
     padding: 55px 60px 20px 80px;
   }
+
+/*  .put-photo__form {
+    width: 960px;
+    padding: 0 10px;
+    margin: @centerer-margin;
+    box-sizing: border-box;
+    padding-left: 83px;
+  }*/
 
   .put-photo__picture {
     margin-right: 90px;
