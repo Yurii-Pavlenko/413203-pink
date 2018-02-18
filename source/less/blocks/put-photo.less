@@ -48,6 +48,21 @@
   border: none;
   color: @instrument-color;
 
+  &--crop {
+    width: 51px;
+    height: 48px;
+  }
+
+  &--fill {
+    width: 51px;
+    height: 48px;
+  }
+
+  &--contrast {
+    width: 48px;
+    height: 48px;
+  }
+
   &--fill:hover,
   &--fill:focus,
   &--contrast:hover,
@@ -271,7 +286,7 @@
 
 @media (min-width: @desktop-width) {
   .put-photo {
-    width: 960px;
+    width: 940px;
     margin-bottom: 96px;
     padding: 55px 60px 20px 80px;
   }
@@ -296,6 +311,27 @@
     }
   }
 
+  .put-photo__effect {
+    display: block;
+    width: 410px;
+    text-align: left;
+  }
+
+  .put-photo__tune-up {
+    width: 325px;
+    top: -43px;
+    left: 11px;
+
+    &--fill {
+      left: 53px;
+    }
+
+    &--contrast {
+      top: -35px;
+      left: 47px;
+    }
+  }
+
   .put-photo__button {
     width: 183px;
     height: 55px;
@@ -307,13 +343,27 @@
   }
 
   .put-photo__tool {
-    height: 25px;
+    height: 48px;
     margin-top: -11px;
     margin-bottom: 0;
     margin-left: -4px;
     color: @font-color-pink;
 
+
+    &--crop {
+      width: 51px;
+      height: 48px;
+      margin-right: -3px;
+    }
+
+    &--fill {
+      width: 51px;
+      height: 48px;
+    }
+
     &--contrast {
+      width: 48px;
+      height: 48px;
       padding-top: 6px;
       margin-right: 9px;
     }
