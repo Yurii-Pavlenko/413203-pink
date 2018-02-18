@@ -1,5 +1,4 @@
 .main-footer {
-  width: @mobile-width;
   margin: @centerer-margin;
   padding: 40px 0 35px;
   text-align: center;
@@ -39,13 +38,10 @@
 
 @media (min-width: @tablet-width) {
   .main-footer {
-    width: @tablet-width;
-    padding: 0 20px;
     box-sizing: border-box;
 
     &--main-sheet {
       display: block;
-      width: @tablet-width;
     }
   }
 
@@ -73,8 +69,8 @@
 
 @media (min-width: @desktop-width) {
   .main-footer {
-    width: 1200px;
     margin: @centerer-margin;
+    padding: 0;
   }
 
   .main-footer--main-sheet .main-footer__wrapper {
@@ -84,14 +80,19 @@
 
   .main-footer__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     width: @desktop-width;
     margin: @centerer-margin;
     padding: 0 10px;
     box-sizing: border-box;
   }
 
+  .main-footer__logo {
+    margin-right: 188px;
+  }
+
   .main-footer__social {
+    margin-right: 199px;
     padding: 3px 0 0 40px;
   }
 

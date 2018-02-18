@@ -22,7 +22,6 @@
     "run-sequence": "2.2.1",
     "css-mqpacker": "6.0.2",
     "gulp-uglify": "3.0.0",
-    "gulp-minify-css": "1.2.4",
     "imagemin-jpegoptim": "5.2.0",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "8.4.x",

@@ -71,14 +71,14 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 //Генерация webp
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 // Сборка SVG спрайта
@@ -109,8 +109,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
     "source/*.html"
   ], {
     base: "source"
@@ -124,5 +122,9 @@ gulp.task("build", function (done) {
       "copy",
       "style",
       "images",
+      "sprite",
+      "html",
+      "sprite",
+      "js",
       done);
 });
