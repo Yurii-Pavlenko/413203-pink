@@ -2,7 +2,7 @@
   width: 834px;
   position: relative;
   left: 50%;
-  margin: @centerer-margin 40px;
+  margin: @centerer-margin 43px;
   transform: translateX(-50%);
   border-collapse: collapse;
 
@@ -20,7 +20,7 @@
 
 .price-table__cell-head {
   width: 275px;
-  height: 98px;
+  height: 95px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -57,6 +57,10 @@
   padding: 0 8px 0 22px;
 }
 
+.price-table__type {
+  margin: 0;
+}
+
 .price-table__licence-price {
   margin: 0;
   padding-top: 3px;
@@ -90,6 +94,12 @@
     background-position: 0 5px;
     background-size: 27px;
   }
+
+  .price-table__feature {
+    &--medium {
+      padding-top: 3px;
+    }
+  }
 }
 
 
@@ -111,8 +121,8 @@
   }
 
   .price-table__cell {
-    width: 150px;
-    height: 48px;
+    width: 160px;
+    height: 46px;
 
     &--visible {
       display: block;
@@ -134,13 +144,29 @@
   }
 
   .price-table__cell-head {
-    height: 75px;
+    height: 78px;
     font-size: 16px;
   }
 
   .price-table__hit {
     top: 7px;
     left: 311px;
+  }
+
+  .price-table__condition {
+    &--yes {
+      background-size: 51px 38px;
+    }
+
+    &--no {
+      width: 43px;
+      background-position: 0 5px;
+    }
+  }
+
+  .price-table__type {
+    margin: 0;
+    padding-top: 5px;
   }
 
   .price-table__licence-price {
@@ -184,7 +210,7 @@
 
 
   .price-table__cell {
-    width: 235px;
+    width: 240px;
     height: 60px;
 
     &--visible {
