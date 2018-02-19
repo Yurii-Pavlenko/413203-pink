@@ -44,10 +44,12 @@
 
   &:hover,
   &:focus {
+    outline: none;
     border-color: @bg-darkblue;
   }
 
   &:active {
+    outline: none;
     border-color: @bg-color-pink;
   }
 }
@@ -132,11 +134,13 @@
 .tenderer-form__input-get:checked + .tenderer-form__achievement::after {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 28px;
-  width: 23px;
-  height: 17px;
-  background: url("../../img/icon-yes-form.svg") no-repeat 0 0;
+  top: 24px;
+  left: 30px;
+  width: 18px;
+  height: 7px;
+  border-left: 2px solid @bg-color-pink;
+  border-bottom: 2px solid @bg-color-pink;
+  transform: rotate(-45deg);
 }
 
 .tenderer-form__contacts {

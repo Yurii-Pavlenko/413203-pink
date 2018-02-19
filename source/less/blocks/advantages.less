@@ -2,7 +2,7 @@
   position: relative;
   width: @mobile-width;
   min-height: 700px;
-  margin: @centerer-margin;
+  margin: @centerer-margin 78px;
   padding-top: 86px;
   background: @bg-light-grey url("../img/iphone-screen-mobile@1x.png") no-repeat;
   background-position: center 510px;
@@ -13,7 +13,7 @@
     background-position: center 510px;
   }
 
-  &::before {
+  /*&::before {
     content: "";
     position: absolute;
     top: 0;
@@ -21,6 +21,18 @@
     height: 35px;
     background: url("../../img/bg-triangle-white.svg") no-repeat -7px 0;
     background-size: cover;
+  }*/
+}
+
+.advantages__slope {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 35px;
+
+  &--big {
+    display: none;
   }
 }
 
@@ -71,6 +83,10 @@
       height: 95px;
       background: url("../img/bg-triangle-white.svg") no-repeat -1px 0;
     }
+  }
+
+  .advantages__slope {
+    display: none;
   }
 
   .advantages__wrapper {
