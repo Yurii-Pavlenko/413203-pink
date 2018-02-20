@@ -243,6 +243,15 @@
     height: 25px;
     margin-bottom: 0;
     color: @font-color-pink;
+
+    &--fill {
+      margin-left: -1px;
+    }
+
+    &--contrast {
+      margin-top: 0;
+      margin-left: -4px;
+    }
   }
 
   .put-photo__img {
@@ -252,6 +261,8 @@
     &--contrast {
       width: 16px;
       height: 16px;
+      margin-top: -1px;
+      margin-left: -10px;
     }
   }
 
@@ -260,11 +271,16 @@
     position: relative;
     padding-top: 12px;
 
+    &--active {
+      margin-left: -4px;
+    }
+
     &--fill {
       padding-top: 9px;
     }
 
     &--contrast {
+      margin-left: -5px;
       padding-top: 9px;
     }
   }
@@ -272,6 +288,10 @@
   .put-photo__scale {
     width: 202px;
     margin-left: 24px;
+
+    &--contrast {
+      margin-left: 14px;
+    }
   }
 
   .put-photo__toggle {
@@ -283,12 +303,12 @@
 
     &--fill {
       top: 3px;
-      left: 48px;
+      left: 46px;
     }
 
     &--contrast {
       top: 3px;
-      left: 120px;
+      left: 110px;
     }
   }
 }
