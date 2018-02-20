@@ -391,12 +391,13 @@
     flex-wrap: wrap;
     width: @desktop-width;
     margin: @centerer-margin;
-    padding: 0 10px;
+    padding: 0 8px;
   }
 
   .tenderer-form__name {
     width: 436px;
     margin-right: 66px;
+    margin-bottom: 11px;
     border: 2px solid @white;
   }
 
@@ -407,7 +408,7 @@
   .tenderer-form__contacts {
     width: 940px;
     height: 157px;
-    margin: @centerer-margin 64px;
+    margin: @centerer-margin 67px;
   }
 
   .tenderer-form__achievements {
@@ -419,7 +420,8 @@
   .tenderer-form__share-impress {
     width: 940px;
     height: 167px;
-    margin: @centerer-margin 66px;
+    margin: @centerer-margin 64px;
+    padding-bottom: 46px;
   }
 
   .tenderer-form__input {
@@ -430,9 +432,13 @@
     }
   }
 
+  .tenderer-form__title--impress {
+    margin-bottom: 22px;
+  }
+
   .tenderer-form__tale {
     width: 820px;
-    height: 125px;
+    height: 127px;
   }
 
   .tenderer-form__list {
@@ -441,7 +447,8 @@
       justify-content: space-between;
       width: 815px;
       margin: @centerer-margin;
-      margin-top: -17px;
+      margin-top: -16px;
+      margin-left: 57px;
       padding-left: 3px;
     }
   }
@@ -454,9 +461,19 @@
 
     &--achievements {
       display: flex;
-      justify-content: space-between;
+      justify-content: left;
       flex-wrap: wrap;
       padding-left: 30px;
+    }
+  }
+
+  .tenderer-form__pair {
+    &--first {
+      margin-right: 23px;
+    }
+
+    &--second {
+      margin-right: 4px;
     }
   }
 
@@ -471,6 +488,7 @@
   }
 
   .tenderer-form__item {
+    margin-bottom: 38px;
     &--contacts {
       width: 372px;
     }
